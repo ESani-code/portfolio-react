@@ -3,8 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import './styles/index.css'
 import App from './App.tsx'
-// import Navbar from './components/Navbar.tsx'
 import PillNav from './components/PillNav.tsx'
+import SoftAurora from './components/SoftAurora.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -28,7 +28,22 @@ createRoot(document.getElementById('root')!).render(
         // theme="light"
         initialLoadAnimation={true}
       />
-      {/* <Navbar /> */}
+      <SoftAurora
+        speed={0.3}
+        scale={1.3}
+        brightness={1.7}
+        color1="#ff7575"
+        color2="#ff0000"
+        noiseFrequency={3}
+        noiseAmplitude={3.5}
+        bandHeight={0.4}
+        bandSpread={2}
+        octaveDecay={0.17}
+        layerOffset={0.1}
+        colorSpeed={0.5}
+        enableMouseInteraction
+        mouseInfluence={0.1}
+      />
       <App />
     </BrowserRouter>
   </StrictMode>,

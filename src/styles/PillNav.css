@@ -1,6 +1,6 @@
 .pill-nav-container {
   position: absolute;
-  top: 1em;
+  top: 1.2em;
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
@@ -30,9 +30,10 @@
 @media (max-width: 768px) {
   .pill-nav {
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 1rem;
     background: transparent;
+    position: relative;
   }
 }
 
@@ -51,6 +52,7 @@
   border-radius: 50%;
   background: var(--base, #000);
   padding: 4px; /* Reduced from 8px to give logo more space */
+  margin-right: 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +72,7 @@
   align-items: stretch;
   gap: var(--pill-gap);
   margin: 0;
-  padding: 3px;
+  padding: 5px;
   height: 100%;
 }
 
@@ -188,6 +190,10 @@
 @media (max-width: 768px) {
   .mobile-menu-button {
     display: flex;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -220,17 +226,21 @@
   padding: 3px;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 5px;
 }
 
 .mobile-menu-popover .mobile-menu-link {
   display: block;
+  width: 85%;
+  max-width: 400px;
+  margin: 0 auto;
   padding: 12px 16px;
   color: var(--pill-text, #fff);
   background-color: var(--pill-bg, #fff);
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
+  text-align: center;
   border-radius: 50px;
   transition: all 0.2s ease;
 }
