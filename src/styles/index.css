@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/ProductSans-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/ProductSans-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/ProductSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/ProductSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/ProductSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/ProductSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/ProductSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/ProductSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/ProductSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/ProductSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/ProductSans-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/ProductSans-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+:root {
+  --primary-bg: #070707;
+  --secondary-bg: #101010;
+  --text-color: #f0f0f0;
+  --accent-color: #ed3838;
+  --hover-color: #ff7a7a;
+  --border-color: #ff1c1c;
+}
+
+@theme {
+  --color-primary-bg: var(--primary-bg);
+  --color-secondary-bg: var(--secondary-bg);
+  --color-text-color: var(--text-color);
+  --color-accent-color: var(--accent-color);
+  --color-hover-color: var(--hover-color);
+  --color-border-color: var(--border-color);
+  
+  --font-product-sans: 'Product Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  font-family: 'Product Sans', sans-serif;
+}
