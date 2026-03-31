@@ -93,6 +93,33 @@
   --font-product-sans: 'Product Sans', ui-sans-serif, system-ui, sans-serif;
 }
 
+::selection{
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+::moz-selection{
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: var(--primary-bg);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--accent-color);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: var(--hover-color);
+}
+
+
 body {
   background-color: var(--primary-bg);
   color: var(--text-color);
