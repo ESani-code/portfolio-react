@@ -46,7 +46,7 @@ const App = () => {
 
 
 
-      <p className='text-2xl md:text-3xl lg:text-4xl font-bold'>
+      <div className='text-2xl md:text-3xl lg:text-4xl font-medium'>
         I am a  
         <TextType 
         text={[" Front-end Developer", " Graphic Designer", " Motion Designer", " Media Enthusiast"]}
@@ -56,13 +56,13 @@ const App = () => {
         cursorCharacter="|"
         // texts={["Welcome to React Bits! Good to see you!","Build some amazing experiences!"]}
         deletingSpeed={50}
-        variableSpeedEnabled={true}
-        variableSpeedMin={60}
-        variableSpeedMax={80}
+        // variableSpeedEnabled={false}
+        // variableSpeedMin={60}
+        // variableSpeedMax={80}
         cursorBlinkDuration={0.5}
         className="text-accent-color"
         />
-      </p>
+      </div>
 
 
       </section>
