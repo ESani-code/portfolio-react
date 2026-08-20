@@ -1,12 +1,12 @@
 import BlurText from "./ui/BlurText.tsx";
-import PillNav from "./ui/PillNav.tsx";
-import SoftAurora from "./ui/SoftAurora.tsx";
+// import PillNav from "./ui/PillNav.tsx";
+// import SoftAurora from "./ui/SoftAurora.tsx";
 import TextType from "./ui/TextType.tsx";
 
 const Hero = () => {
   return (
     <>
-      <PillNav
+      {/* <PillNav
         logo="https://res.cloudinary.com/don03rsnm/image/upload/v1758131129/Logo.png"
         logoAlt="Design Labs Logo"
         items={[
@@ -24,7 +24,7 @@ const Hero = () => {
         pillTextColor="#fffff"
         // theme="light"
         initialLoadAnimation={true}
-      />
+      /> */}
 
       <section className="herotext min-h-screen flex flex-col justify-center items-center text-center px-4">
         <BlurText
@@ -60,7 +60,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <SoftAurora
+      {/* <SoftAurora
         speed={0.3}
         scale={1.3}
         brightness={0.4}
@@ -75,7 +75,7 @@ const Hero = () => {
         colorSpeed={0.5}
         enableMouseInteraction
         mouseInfluence={0.1}
-      />
+      /> */}
     </>
   );
 };
