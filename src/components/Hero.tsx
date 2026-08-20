@@ -1,3 +1,4 @@
+import ToggleSwitch from "./ToggleSwitch.tsx";
 import BlurText from "./ui/BlurText.tsx";
 // import PillNav from "./ui/PillNav.tsx";
 // import SoftAurora from "./ui/SoftAurora.tsx";
@@ -27,6 +28,7 @@ const Hero = () => {
       /> */}
 
       <section className="herotext min-h-screen flex flex-col justify-center items-center text-center px-4">
+        <ToggleSwitch />
         <BlurText
           text="Hello there!!!"
           delay={300}
