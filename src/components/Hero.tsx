@@ -28,7 +28,7 @@ const Hero = () => {
 
       <section className="herotext min-h-screen flex flex-col justify-center items-center text-center px-4">
         <BlurText
-          text="Emmanuel Sani"
+          text="Hello there!!!"
           delay={300}
           animateBy="letters"
           direction="top"
