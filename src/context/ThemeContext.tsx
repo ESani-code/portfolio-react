@@ -30,8 +30,10 @@ const ThemeProvider = ({ children }: Props) => {
     const root = document.documentElement;
     if (theme == "developer") {
       root.classList.add("developer");
+      root.classList.remove("creative");
     } else {
       root.classList.remove("developer");
+      root.classList.add("creative");
     }
   }, [theme]);
 
