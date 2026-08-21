@@ -1,10 +1,17 @@
 import ToggleSwitch from "./ToggleSwitch.tsx";
-import BlurText from "./ui/BlurText.tsx";
+// import BlurText from "./ui/BlurText.tsx";
 // import PillNav from "./ui/PillNav.tsx";
 // import SoftAurora from "./ui/SoftAurora.tsx";
-import TextType from "./ui/TextType.tsx";
+// import TextType from "./ui/TextType.tsx";
+
+import { useTheme } from "../context/ThemeContext.tsx";
+// import ElasticMesh from "./ElasticMesh.tsx";
+import AnimateMode from "./AnimateMode.tsx";
+import Creative from "../view/hero/Creative.tsx";
+import Developer from "../view/hero/Developer.tsx";
 
 const Hero = () => {
+  const { theme } = useTheme();
   return (
     <>
       {/* <PillNav
@@ -27,9 +34,15 @@ const Hero = () => {
         initialLoadAnimation={true}
       /> */}
 
-      <section className="herotext min-h-screen flex flex-col justify-center items-center text-center px-4">
+      <section className="min-h-screen flex flex-col justify-center items-center text-center px-4">
+        <h1>{theme.charAt(0).toUpperCase() + theme.slice(1)} Mode</h1>
         <ToggleSwitch />
-        <BlurText
+        <AnimateMode
+          creative={<Creative />}
+          developer={<Developer />}
+        ></AnimateMode>
+        {/* Section Where it starts */}
+        {/* <BlurText
           text="Hello there!!!"
           delay={300}
           animateBy="letters"
@@ -60,7 +73,31 @@ const Hero = () => {
             className="text-accent-color"
           />
         </div>
+        <div className="w-[540px] h-[675px]">
+          <ElasticMesh
+            image="https://res.cloudinary.com/don03rsnm/image/upload/v1767356310/Christmas_bwqjfn.png"
+            interaction="hover"
+            tilt={0}
+            shading={0.5}
+            color1="#5227FF"
+            color2="#B19EEF"
+            showGrid
+            gridDensity={20}
+            gridOpacity={0.1}
+            gridColor="#f7ff11"
+            highlight="#ffffff"
+            borderRadius={21}
+            stiffness={0.05}
+            damping={0.2}
+            grabRadius={0.6}
+            pull={0.4}
+            wobble={7}
+            resolution={25}
+            enabled
+          />
+        </div> */}
       </section>
+      {/* Section Where it cut off*/}
 
       {/* <SoftAurora
         speed={0.3}
