@@ -1,4 +1,5 @@
-import ElasticMesh from "../../components/ElasticMesh";
+// import ElasticMesh from "../../components/ElasticMesh";
+import HalftoneReveal from "../../components/HalftoneReveal";
 import BlurText from "../../components/ui/BlurText";
 import TextType from "../../components/ui/TextType";
 
@@ -6,7 +7,7 @@ const Developer = () => {
   return (
     <section className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden">
       <div className="absolute inset-0 w-full h-full z-0">
-        <ElasticMesh
+        {/* <ElasticMesh
           image="https://res.cloudinary.com/don03rsnm/image/upload/v1787397958/Screenshot_2025-05-23_142812_h4vaay.png"
           interaction="hover"
           tilt={0}
@@ -26,6 +27,24 @@ const Developer = () => {
           wobble={7}
           resolution={25}
           enabled
+        /> */}
+
+        <HalftoneReveal
+          src="https://res.cloudinary.com/don03rsnm/image/upload/v1787397958/Screenshot_2025-05-23_142812_h4vaay.png"
+          inkColor="#120D07"
+          paperColor="#ffffff"
+          mode="mono"
+          dotDensity={180}
+          angle={30}
+          revealRadius={0.5}
+          dotSize={1.02}
+          shape="line"
+          contrast={1}
+          invert={false}
+          edge={0.76}
+          follow={0.1}
+          idleReveal={0}
+          trigger="hover"
         />
       </div>
 
