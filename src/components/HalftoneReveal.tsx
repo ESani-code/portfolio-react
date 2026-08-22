@@ -220,7 +220,7 @@ const HalftoneReveal = ({
   follow = 0.37,
   idleReveal = 0,
   trigger = "hover",
-  borderRadius = "16px",
+  borderRadius = "0px",
   className = "",
   style,
 }: HalftoneRevealProps) => {
