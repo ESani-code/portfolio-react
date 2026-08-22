@@ -38,7 +38,6 @@ const Creative = () => {
           I am a
           <TextType
             text={[
-              " Front-end Developer",
               " Graphic Designer",
               " Motion Designer",
               " Media Enthusiast",

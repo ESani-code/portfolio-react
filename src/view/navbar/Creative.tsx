@@ -2,7 +2,6 @@ export const CreativeLeft = () => {
   const links = [
     { href: "#about", label: "About" },
     { href: "#graphics", label: "Graphics" },
-    { href: "#motion-designs", label: "Motion Designs" },
   ];
 
   return (
@@ -18,8 +17,7 @@ export const CreativeLeft = () => {
 
 export const CreativeRight = () => {
   const links = [
-    { href: "#ui-animations", label: "UI Animations" },
-    { href: "#services", label: "Services" },
+    { href: "#motion-designs", label: "Motion Designs" },
     { href: "#contact", label: "Contact" },
   ];
 

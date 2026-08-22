@@ -1,5 +1,3 @@
-// import ToggleSwitch from "./ToggleSwitch.tsx";
-
 import { useTheme } from "../context/ThemeContext.tsx";
 
 import AnimateMode from "./AnimateMode.tsx";
@@ -12,7 +10,6 @@ const Hero = () => {
     <>
       <section className="min-h-screen w-full flex flex-col justify-center items-center text-center">
         <h1>{theme.charAt(0).toUpperCase() + theme.slice(1)} Mode</h1>
-        {/* <ToggleSwitch /> */}
         <AnimateMode creative={<Creative />} developer={<Developer />} />
       </section>
     </>

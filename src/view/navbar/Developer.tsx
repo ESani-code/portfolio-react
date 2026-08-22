@@ -1,7 +1,7 @@
 export const DeveloperLeft = () => {
   const links = [
     { href: "#about", label: "About" },
-    { href: "#work", label: "Work" },
+    { href: "#tech-stack", label: "Tech Stack" },
   ];
   return (
     <div className="flex items-center gap-3">
