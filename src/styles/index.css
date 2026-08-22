@@ -242,7 +242,7 @@ body {
 
 @layer components {
   .links {
-    @apply text-sm px-1 font-medium rounded-sm hover:bg-accent-color transition-all ease-in-out duration-300;
+    @apply text-sm px-2 font-medium rounded-sm hover:bg-accent-color transition-all ease-in-out duration-300;
   }
 }
 
