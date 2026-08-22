@@ -1,19 +1,31 @@
-import { useRef, useEffect, CSSProperties } from 'react';
-import { Renderer, Program, Triangle, Mesh, Texture } from 'ogl';
+// @ts-expect-error type of CSSProperties
+import { useRef, useEffect, CSSProperties } from "react";
+import { Renderer, Program, Triangle, Mesh, Texture } from "ogl";
 
-const DEFAULT_SRC = 'https://picsum.photos/seed/halftone-reveal/1200/800';
+const DEFAULT_SRC = "https://picsum.photos/seed/halftone-reveal/1200/800";
 
 const hexToRgb = (hex: string): [number, number, number] => {
-  const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex || '');
-  return m ? [parseInt(m[1], 16) / 255, parseInt(m[2], 16) / 255, parseInt(m[3], 16) / 255] : [0, 0, 0];
+  const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex || "");
+  return m
+    ? [
+        parseInt(m[1], 16) / 255,
+        parseInt(m[2], 16) / 255,
+        parseInt(m[3], 16) / 255,
+      ]
+    : [0, 0, 0];
 };
 
-type Mode = 'mono' | 'duotone' | 'color';
-type Shape = 'circle' | 'square' | 'diamond' | 'line';
-type Trigger = 'off' | 'hover' | 'always';
+type Mode = "mono" | "duotone" | "color";
+type Shape = "circle" | "square" | "diamond" | "line";
+type Trigger = "off" | "hover" | "always";
 
 const MODES: Record<Mode, number> = { mono: 0, duotone: 1, color: 2 };
-const SHAPES: Record<Shape, number> = { circle: 0, square: 1, diamond: 2, line: 3 };
+const SHAPES: Record<Shape, number> = {
+  circle: 0,
+  square: 1,
+  diamond: 2,
+  line: 3,
+};
 const TRIGGERS: Record<Trigger, number> = { off: 0, hover: 1, always: 2 };
 
 export interface HalftoneRevealProps {
@@ -194,30 +206,37 @@ void main() {
 
 const HalftoneReveal = ({
   src = DEFAULT_SRC,
-  inkColor = '#141414',
-  paperColor = '#fff7e6',
-  mode = 'mono',
+  inkColor = "#141414",
+  paperColor = "#fff7e6",
+  mode = "mono",
   dotSize = 1,
   dotDensity = 71,
   angle = 45,
-  shape = 'circle',
+  shape = "circle",
   contrast = 1.15,
   invert = false,
   revealRadius = 0.4,
   edge = 0.8,
   follow = 0.37,
   idleReveal = 0,
-  trigger = 'hover',
-  borderRadius = '16px',
-  className = '',
-  style
+  trigger = "hover",
+  borderRadius = "16px",
+  className = "",
+  style,
 }: HalftoneRevealProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const rendererRef = useRef<Renderer | null>(null);
   const uniformsRef = useRef<Record<string, { value: unknown }> | null>(null);
   const rafRef = useRef<number | null>(null);
   const followRef = useRef<number>(follow);
-  const mouseRef = useRef({ x: 0.5, y: 0.5, sx: 0.5, sy: 0.5, active: 0, target: 0 });
+  const mouseRef = useRef({
+    x: 0.5,
+    y: 0.5,
+    sx: 0.5,
+    sy: 0.5,
+    active: 0,
+    target: 0,
+  });
 
   useEffect(() => {
     followRef.current = follow;
@@ -228,21 +247,21 @@ const HalftoneReveal = ({
     if (!container) return;
 
     const reduced =
-      typeof window !== 'undefined' &&
+      typeof window !== "undefined" &&
       window.matchMedia &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     const renderer = new Renderer({
       dpr: Math.min(window.devicePixelRatio || 1, 2),
       alpha: false,
-      antialias: true
+      antialias: true,
     });
     rendererRef.current = renderer;
     const gl = renderer.gl;
     gl.clearColor(0, 0, 0, 1);
-    gl.canvas.style.width = '100%';
-    gl.canvas.style.height = '100%';
-    gl.canvas.style.display = 'block';
+    gl.canvas.style.width = "100%";
+    gl.canvas.style.height = "100%";
+    gl.canvas.style.display = "block";
     container.appendChild(gl.canvas);
 
     const texture = new Texture(gl, { generateMipmaps: false });
@@ -265,7 +284,7 @@ const HalftoneReveal = ({
       uRevealRadius: { value: revealRadius },
       uEdge: { value: edge },
       uIdleReveal: { value: idleReveal },
-      uTrigger: { value: TRIGGERS[trigger] ?? 1 }
+      uTrigger: { value: TRIGGERS[trigger] ?? 1 },
     };
     uniformsRef.current = uniforms;
 
@@ -273,7 +292,7 @@ const HalftoneReveal = ({
     const mesh = new Mesh(gl, { geometry: new Triangle(gl), program });
 
     const img = new Image();
-    img.crossOrigin = 'anonymous';
+    img.crossOrigin = "anonymous";
     img.src = src;
     img.onload = () => {
       texture.image = img;
@@ -299,9 +318,9 @@ const HalftoneReveal = ({
     const onLeave = () => {
       mouseRef.current.target = 0;
     };
-    container.addEventListener('pointermove', onMove, { passive: true });
-    container.addEventListener('pointerenter', onMove, { passive: true });
-    container.addEventListener('pointerleave', onLeave, { passive: true });
+    container.addEventListener("pointermove", onMove, { passive: true });
+    container.addEventListener("pointerenter", onMove, { passive: true });
+    container.addEventListener("pointerleave", onLeave, { passive: true });
 
     let prev = performance.now();
     const loop = (now: number) => {
@@ -327,10 +346,10 @@ const HalftoneReveal = ({
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
       ro.disconnect();
-      container.removeEventListener('pointermove', onMove);
-      container.removeEventListener('pointerenter', onMove);
-      container.removeEventListener('pointerleave', onLeave);
-      const ext = gl.getExtension('WEBGL_lose_context');
+      container.removeEventListener("pointermove", onMove);
+      container.removeEventListener("pointerenter", onMove);
+      container.removeEventListener("pointerleave", onLeave);
+      const ext = gl.getExtension("WEBGL_lose_context");
       if (ext) ext.loseContext();
       if (gl.canvas.parentNode) gl.canvas.parentNode.removeChild(gl.canvas);
       rendererRef.current = null;
@@ -368,7 +387,7 @@ const HalftoneReveal = ({
     revealRadius,
     edge,
     idleReveal,
-    trigger
+    trigger,
   ]);
 
   return (
