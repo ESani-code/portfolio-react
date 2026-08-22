@@ -1,5 +1,3 @@
-// import ElasticMesh from "../../components/ElasticMesh";
-
 import HalftoneReveal from "../../components/HalftoneReveal";
 import BlurText from "../../components/ui/BlurText";
 import TextType from "../../components/ui/TextType";
@@ -15,7 +13,7 @@ const Creative = () => {
           mode="mono"
           dotDensity={180}
           angle={30}
-          revealRadius={0.5}
+          revealRadius={0.3}
           dotSize={1.02}
           shape="line"
           contrast={1}

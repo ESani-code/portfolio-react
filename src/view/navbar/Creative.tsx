@@ -1,15 +1,15 @@
 export const CreativeLeft = () => {
   const links = [
-    { href: "#work", label: "Work" },
-    { href: "#designs", label: "Designs" },
-    { href: "#media", label: "Media" },
+    { href: "#about", label: "About" },
+    { href: "#graphics", label: "Graphics" },
+    { href: "#motion-designs", label: "Motion Designs" },
   ];
 
   return (
     <div className="flex items-center gap-3">
-      {links.map((link) => (
-        <a key={link.href} href={link.href} className="links">
-          {link.label}
+      {links.map(({ href, label }) => (
+        <a key={href} href={href} className="links">
+          {label}
         </a>
       ))}
     </div>
@@ -18,16 +18,16 @@ export const CreativeLeft = () => {
 
 export const CreativeRight = () => {
   const links = [
-    { href: "#about", label: "About" },
+    { href: "#ui-animations", label: "UI Animations" },
     { href: "#services", label: "Services" },
     { href: "#contact", label: "Contact" },
   ];
 
   return (
     <div className="flex items-center gap-3">
-      {links.map((link) => (
-        <a key={link.href} href={link.href} className="links">
-          {link.label}
+      {links.map(({ href, label }) => (
+        <a key={href} href={href} className="links">
+          {label}
         </a>
       ))}
     </div>
