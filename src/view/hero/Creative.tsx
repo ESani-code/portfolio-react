@@ -7,7 +7,7 @@ import TextType from "../../components/ui/TextType";
 const Creative = () => {
   return (
     <section className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden">
-      <div className="absolute inset-0 w-full h-full z-0">
+      <div className="absolute inset-0 w-full h-full z-0 ">
         <HalftoneReveal
           src="https://res.cloudinary.com/don03rsnm/image/upload/v1787397958/Screenshot_2025-05-23_142812_h4vaay.png"
           inkColor="#120D07"
@@ -34,7 +34,7 @@ const Creative = () => {
           animateBy="letters"
           direction="top"
           // onAnimationComplete={handleAnimationComplete}
-          className="text-5xl md:text-7xl lg:text-8xl mb-6 font-bold text-accent-color text-center justify-center"
+          className="text-5xl md:text-7xl lg:text-9xl mb-6 font-bold text-accent-color text-center justify-center"
         />
         <div className="text-2xl md:text-3xl lg:text-4xl font-medium">
           I am a
