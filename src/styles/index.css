@@ -240,6 +240,12 @@ body {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@layer components {
+  .links {
+    @apply text-sm px-1 font-medium rounded-sm hover:bg-accent-color transition-all ease-in-out duration-300;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

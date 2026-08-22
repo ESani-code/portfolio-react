@@ -4,6 +4,7 @@ import About from "./components/About";
 import ClickSpark from "./components/ClickSpark";
 import Hero from "./components/Hero";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         sparkCount={9}
         duration={400}
       >
+        <NavBar />
         <Hero />
         <About />
       </ClickSpark>
