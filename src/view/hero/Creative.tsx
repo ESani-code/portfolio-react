@@ -8,28 +8,6 @@ const Creative = () => {
   return (
     <section className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden">
       <div className="absolute inset-0 w-full h-full z-0">
-        {/* <ElasticMesh
-          image="https://res.cloudinary.com/don03rsnm/image/upload/v1787397958/Screenshot_2025-05-23_142812_h4vaay.png"
-          interaction="hover"
-          tilt={0}
-          shading={0.5}
-          color1="#5227FF"
-          color2="#B19EEF"
-          showGrid
-          gridDensity={20}
-          gridOpacity={0.1}
-          gridColor="#f7ff11"
-          highlight="#ffffff"
-          borderRadius={21}
-          stiffness={0.05}
-          damping={0.2}
-          grabRadius={0.6}
-          pull={0.4}
-          wobble={7}
-          resolution={25}
-          enabled
-        /> */}
-
         <HalftoneReveal
           src="https://res.cloudinary.com/don03rsnm/image/upload/v1787397958/Screenshot_2025-05-23_142812_h4vaay.png"
           inkColor="#120D07"
@@ -51,7 +29,7 @@ const Creative = () => {
 
       <div className="relative z-10 flex flex-col items-center justify-center pointer-events-none">
         <BlurText
-          text="Developer Mode"
+          text="Creative Mode"
           delay={300}
           animateBy="letters"
           direction="top"
