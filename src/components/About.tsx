@@ -1,8 +1,16 @@
+import AnimateMode from "./AnimateMode";
+
+import Creative from "../view/about/Creative";
+import Developer from "../view/about/Developer";
+
 const About = () => {
   return (
-    <div className="items-center justify-center text-center p-10 m-10">
-      <h1 className="text-6xl font-black">Yooooo</h1>
-    </div>
+    <section className="w-full flex flex-col justify-center items-center text-center mt-3 p-6">
+      <AnimateMode
+        creative={<Creative />}
+        developer={<Developer />}
+      ></AnimateMode>
+    </section>
   );
 };
 
