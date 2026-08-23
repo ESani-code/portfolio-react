@@ -6,8 +6,7 @@ import ToggleSwitch from "./ToggleSwitch";
 const NavBar = () => {
   return (
     <nav className="fixed bottom-7 left-0 w-full flex justify-center items-end z-50 pointer-events-none px-4">
-      {/* CENTER PILL */}
-      <div className="flex items-center gap-4 bg-black/80 backdrop-blur-md text-white px-6 py-2 rounded-sm border border-white/10 shadow-2xl pointer-events-auto">
+      <div className="flex items-center gap-4 bg-black/80 backdrop-blur-md text-white px-6 py-2 rounded-sm border border-white/15 shadow-2xl pointer-events-auto">
         {/* Animated Left Links */}
         <AnimateMode
           creative={<CreativeLeft />}

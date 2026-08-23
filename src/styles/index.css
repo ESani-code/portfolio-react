@@ -83,6 +83,7 @@
   --secondary-bg: #101010;
   --text-color: #f0f0f0;
   --accent-color: #ff2340;
+  --accent-bright-color: #ff3b52;
   --hover-color: #ff7a7a;
   --border-color: #ff1c1c;
   --background: oklch(1 0 0);
@@ -124,6 +125,7 @@
   --color-secondary-bg: var(--secondary-bg);
   --color-text-color: var(--text-color);
   --color-accent-color: var(--accent-color);
+  --color-accent-bright-color: var(--accent-bright-color);
   --color-hover-color: var(--hover-color);
   --color-border-color: var(--border-color);
 
