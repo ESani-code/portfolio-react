@@ -51,11 +51,10 @@ const Creative = () => {
         {/* Main Large Typography */}
 
         <h2 className="text-4xl md:text-5xl lg:text-6xl  font-bold leading-tight tracking-tight mb-12 z-99">
-          I'm a{" "}
-          <span className="text-accent-color">
-            designer who turns ideas into real solutions.
-          </span>{" "}
-          I focus on clear interfaces and sharp decisions.
+          A <span className="text-accent-color">Creative</span> who turns{" "}
+          <span className="text-accent-color">ideas into real solutions.</span>{" "}
+          Creating <span className="text-accent-color">visuals</span> to{" "}
+          <span className="text-accent-color">solve</span> your problems
         </h2>
 
         {/* Subtext and Button (Offset to the right) */}
