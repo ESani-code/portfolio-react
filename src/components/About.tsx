@@ -5,8 +5,10 @@ import Developer from "../view/about/Developer";
 
 const About = () => {
   return (
-    <section className="about w-full flex flex-col justify-center items-center text-center mt-3 p-6">
-      <AnimateMode creative={<Creative />} developer={<Developer />} />
+    <section className="flex flex-col justify-center items-center text-center mt-3 py-4 px-3">
+      <div className="max-w-8xl">
+        <AnimateMode creative={<Creative />} developer={<Developer />} />
+      </div>
     </section>
   );
 };

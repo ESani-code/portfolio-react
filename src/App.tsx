@@ -26,19 +26,18 @@ const App = () => {
         sparkCount={9}
         duration={400}
       >
-        <Transistion />
-
-        <Suspense fallback={<Skeleton className="h-full w-full" />}>
-          <NavBar />
-        </Suspense>
-
-        <Suspense fallback={<Skeleton className="h-full w-full" />}>
-          <Hero />
-        </Suspense>
-
-        <Suspense fallback={<Skeleton className="h-full w-full" />}>
-          <About />
-        </Suspense>
+        <section className="flex flex-col gap-y-1">
+          <Transistion />
+          <Suspense fallback={<Skeleton className="h-full w-full" />}>
+            <NavBar />
+          </Suspense>
+          <Suspense fallback={<Skeleton className="h-full w-full" />}>
+            <Hero />
+          </Suspense>
+          <Suspense fallback={<Skeleton className="h-full w-full" />}>
+            <About />
+          </Suspense>
+        </section>
       </ClickSpark>
 
       {/* </BrowserRouter> */}
