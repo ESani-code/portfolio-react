@@ -5,6 +5,7 @@ import ClickSpark from "./components/ClickSpark";
 import Hero from "./components/Hero";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import NavBar from "./components/NavBar";
+import Transistion from "./components/Transistion";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         sparkCount={9}
         duration={400}
       >
+        <Transistion />
         <NavBar />
         <Hero />
         <About />

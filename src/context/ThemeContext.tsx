@@ -14,6 +14,7 @@ type Theme = "creative" | "developer";
 
 type ThemeContextType = {
   theme: Theme;
+  isTransitioning: boolean;
   toggleTheme: () => void;
 };
 
@@ -21,9 +22,19 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 const ThemeProvider = ({ children }: Props) => {
   const [theme, setTheme] = useState<Theme>("creative");
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === "creative" ? "developer" : "creative"));
+    setIsTransitioning(true);
+
+    setTimeout(() => {
+      setTheme((prev) => (prev === "creative" ? "developer" : "creative")); //[cite: 2]
+
+      // 3. Keep the curtain down for a brief moment to simulate loading, then lift it
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, 1000);
+    }, 300);
   };
 
   useEffect(() => {
@@ -38,7 +49,7 @@ const ThemeProvider = ({ children }: Props) => {
   }, [theme]);
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, isTransitioning, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );
