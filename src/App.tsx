@@ -1,15 +1,16 @@
 // import { BrowserRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
 
-import About from "./components/About";
 import ClickSpark from "./components/ClickSpark";
 import { Skeleton } from "./components/ui/skeleton";
 // import Hero from "./components/Hero";
 // import NavBar from "./components/NavBar";
+// import About from "./components/About";
 import Transistion from "./components/Transistion";
 
 const Hero = lazy(() => import("./components/Hero"));
 const NavBar = lazy(() => import("./components/NavBar"));
+const About = lazy(() => import("./components/About"));
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 
