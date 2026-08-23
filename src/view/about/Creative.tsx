@@ -1,4 +1,5 @@
-import TiltedCard from "../../components/TiltedCard";
+import GlareHover from "../../components/GlareHover";
+// import TiltedCard from "../../components/TiltedCard";
 
 const Creative = () => {
   return (
@@ -7,7 +8,7 @@ const Creative = () => {
       <div className="w-full lg:w-1/3 flex justify-center lg:justify-start">
         {/* Desktop View */}
         <div className="relative hidden lg:block items-start">
-          <TiltedCard
+          {/* <TiltedCard
             imageSrc="https://res.cloudinary.com/don03rsnm/image/upload/v1787506329/me-pic_n6hym0.jpg"
             altText="Personal Picture"
             captionText="Creative at Heart"
@@ -21,11 +22,28 @@ const Creative = () => {
             showTooltip
             displayOverlayContent={false}
             shadow={true}
-          />
+          /> */}
+
+          <div style={{ height: "600px", position: "relative" }}>
+            <GlareHover
+              glareColor="#ffffff"
+              glareOpacity={0.3}
+              glareAngle={-30}
+              glareSize={300}
+              transitionDuration={800}
+              playOnce={false}
+            >
+              <div className="w-full h-full z-10 absolute inset-0 pointer-events-none bg-linear-to-r from-transparent from-40% to-black/50 " />
+              <img
+                src="https://res.cloudinary.com/don03rsnm/image/upload/v1787506329/me-pic_n6hym0.jpg"
+                alt="Personal Picture"
+              />
+            </GlareHover>
+          </div>
         </div>
         {/* Mobile View */}
         <div className="block lg:hidden ">
-          <TiltedCard
+          {/* <TiltedCard
             imageSrc="https://res.cloudinary.com/don03rsnm/image/upload/v1787506329/me-pic_n6hym0.jpg"
             altText="Personal Picture"
             captionText="Creative at Heart"
@@ -38,13 +56,28 @@ const Creative = () => {
             showMobileWarning={false}
             showTooltip
             displayOverlayContent={false}
-          />
+          /> */}
+          <div style={{ height: "500px", position: "relative" }}>
+            <GlareHover
+              glareColor="#ffffff"
+              glareOpacity={0.3}
+              glareAngle={-30}
+              glareSize={300}
+              transitionDuration={800}
+              playOnce={false}
+            >
+              <img
+                src="https://res.cloudinary.com/don03rsnm/image/upload/v1787506329/me-pic_n6hym0.jpg"
+                alt="Personal Picture"
+              />
+            </GlareHover>
+          </div>
         </div>
       </div>
 
       {/* RIGHT COLUMN: Typography Layout (Based on Reference Image) */}
       <div className="w-full lg:w-2/3 lg:ml-3 flex flex-col relative">
-        <div className="text-accent-color font-mono text-sm mb-6 font-bold tracking-widest">
+        <div className="z-50 text-accent-color font-mono text-sm mb-6 font-bold tracking-widest">
           // About Me
         </div>
 
