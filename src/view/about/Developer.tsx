@@ -26,7 +26,7 @@ const Developer = () => {
       {/* RIGHT COLUMN: Bio & Tabs */}
       <div className="w-full md:w-2/3 flex flex-col gap-6">
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Background</h2>
           <p className="text-lg opacity-80 leading-relaxed">
             I'm a{" "}
             <span className="text-accent-color font-semibold">

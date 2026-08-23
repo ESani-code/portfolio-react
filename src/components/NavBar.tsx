@@ -6,7 +6,7 @@ import ToggleSwitch from "./ToggleSwitch";
 
 const NavBar = () => {
   return (
-    <nav className="fixed bottom-7 left-0 w-full flex justify-center items-end z-50 pointer-events-none px-4">
+    <nav className="z-999 fixed bottom-7 left-0 w-full flex justify-center items-end z-50 pointer-events-none px-4">
       <BorderGlow
         edgeSensitivity={45}
         glowColor="10 150 30"

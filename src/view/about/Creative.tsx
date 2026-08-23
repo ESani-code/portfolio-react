@@ -61,7 +61,7 @@ const Creative = () => {
         {/* Subtext and Button (Offset to the right) */}
         {/* ml-auto pushes this block to the right side of its container on desktop */}
         <div className="md:ml-auto w-full md:w-[65%] lg:ml-6 flex flex-col items-start gap-8">
-          <p className="text-sm md:text-base opacity-60 leading-relaxed font-light">
+          <p className="text-sm md:text-base text-white opacity-80 leading-relaxed font-light">
             Bringing your vision to life quickly and efficiently—whether it's
             branding, apps, or websites—I've got it covered, delivering smooth
             and effective solutions from start to finish.
