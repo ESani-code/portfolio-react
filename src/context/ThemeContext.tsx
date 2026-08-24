@@ -28,13 +28,13 @@ const ThemeProvider = ({ children }: Props) => {
     setIsTransitioning(true);
 
     setTimeout(() => {
-      setTheme((prev) => (prev === "creative" ? "developer" : "creative")); //[cite: 2]
+      setTheme((prev) => (prev === "creative" ? "developer" : "creative"));
 
       // 3. Keep the curtain down for a brief moment to simulate loading, then lift it
       setTimeout(() => {
         setIsTransitioning(false);
-      }, 1000);
-    }, 300);
+      }, 500);
+    }, 1000);
   };
 
   useEffect(() => {

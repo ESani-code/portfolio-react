@@ -1,5 +1,6 @@
 import { useState } from "react";
-import TiltedCard from "../../components/TiltedCard";
+// import TiltedCard from "../../components/TiltedCard";
+import GlareHover from "../../components/GlareHover";
 
 const Developer = () => {
   const [activeTab, setActiveTab] = useState("education");
@@ -7,7 +8,7 @@ const Developer = () => {
   return (
     <section className="flex flex-col md:flex-row gap-10 items-start w-full text-left p-6">
       <div className="w-full md:w-1/3 flex justify-center">
-        <TiltedCard
+        {/* <TiltedCard
           imageSrc="https://res.cloudinary.com/don03rsnm/image/upload/v1787506329/me-pic_n6hym0.jpg"
           altText="Personal Picture"
           captionText="Creative at Heart"
@@ -20,7 +21,23 @@ const Developer = () => {
           showMobileWarning={false}
           showTooltip
           displayOverlayContent={false}
-        />
+        /> */}
+        <div style={{ height: "500px", position: "relative" }}>
+          <GlareHover
+            glareColor="#ffffff"
+            glareOpacity={0.3}
+            glareAngle={-30}
+            glareSize={300}
+            transitionDuration={800}
+            playOnce={false}
+          >
+            <div className="w-full h-full z-10 absolute inset-0 pointer-events-none bg-linear-to-r from-transparent from-40% to-black/50 " />
+            <img
+              src="https://res.cloudinary.com/don03rsnm/image/upload/v1787506329/me-pic_n6hym0.jpg"
+              alt="Personal Picture"
+            />
+          </GlareHover>
+        </div>
       </div>
 
       {/* RIGHT COLUMN: Bio & Tabs */}
