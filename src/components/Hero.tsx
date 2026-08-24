@@ -9,7 +9,10 @@ import Developer from "../view/hero/Developer.tsx";
 const Hero = () => {
   return (
     <>
-      <section className="min-h-screen w-full flex flex-col justify-center items-center text-center">
+      <section
+        id="hero"
+        className="min-h-screen w-full flex flex-col justify-center items-center text-center"
+      >
         <AnimateMode creative={<Creative />} developer={<Developer />} />
       </section>
     </>
