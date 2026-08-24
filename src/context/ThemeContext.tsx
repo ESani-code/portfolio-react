@@ -30,7 +30,7 @@ const ThemeProvider = ({ children }: Props) => {
     setTimeout(() => {
       setTheme((prev) => (prev === "creative" ? "developer" : "creative"));
 
-      // 3. Keep the curtain down for a brief moment to simulate loading, then lift it
+      // Keep the curtain down for a brief moment to simulate loading, then lift it
       setTimeout(() => {
         setIsTransitioning(false);
       }, 500);
