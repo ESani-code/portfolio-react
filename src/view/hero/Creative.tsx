@@ -32,7 +32,7 @@ const Creative = () => {
           animateBy="letters"
           direction="top"
           // onAnimationComplete={handleAnimationComplete}
-          className="text-5xl md:text-7xl lg:text-9xl mb-6 font-bold text-accent-color text-center justify-center"
+          className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl mb-6 font-bold text-accent-color text-center justify-center"
         />
         <div className="text-2xl md:text-3xl lg:text-4xl font-medium">
           I am a
