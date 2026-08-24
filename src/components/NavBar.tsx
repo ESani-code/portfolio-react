@@ -17,7 +17,7 @@ const NavBar = () => {
         coneSpread={8}
         colors={["#c084fc", "#f472b6", "#38bdf8"]}
       > */}
-      <div className="flex items-center gap-4 backdrop-blur-md text-white px-6 py-2  shadow-2xl pointer-events-auto">
+      <div className="flex items-center gap-4 bg-black/30 border backdrop-blur-md text-white px-6 py-2 rounded-sm shadow-2xl pointer-events-auto">
         {/* Animated Left Links */}
         <AnimateMode
           creative={<CreativeLeft />}
