@@ -1,7 +1,7 @@
-import AnimateMode from "./AnimateMode";
+import AnimateMode from "../AnimateMode";
 
-import Creative from "../view/about/Creative";
-import Developer from "../view/about/Developer";
+import Creative from "../../view/about/Creative";
+import Developer from "../../view/about/Developer";
 
 const About = () => {
   return (

@@ -3,15 +3,13 @@ import { lazy, Suspense } from "react";
 
 import ClickSpark from "./components/ClickSpark";
 import { Skeleton } from "./components/ui/skeleton";
-// import Hero from "./components/Hero";
-// import NavBar from "./components/NavBar";
-// import About from "./components/About";
+
 import Transistion from "./components/Transistion";
 
-const Hero = lazy(() => import("./components/Hero"));
 const NavBar = lazy(() => import("./components/NavBar"));
-const About = lazy(() => import("./components/About"));
-const WorkOne = lazy(() => import("./components/WorkOne"));
+const Hero = lazy(() => import("./components/sections/Hero"));
+const About = lazy(() => import("./components/sections/About"));
+const WorkOne = lazy(() => import("./components/sections/WorkOne"));
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 

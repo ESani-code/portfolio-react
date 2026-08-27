@@ -1,7 +1,7 @@
-import AnimateMode from "./AnimateMode";
+import AnimateMode from "../AnimateMode";
 
-import Creative from "../view/workone/Creative";
-import Developer from "../view/workone/Developer";
+import Creative from "../../view/workone/Creative";
+import Developer from "../../view/workone/Developer";
 
 const WorkOne = () => {
   return (
