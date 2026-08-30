@@ -13,7 +13,11 @@ const Creative = () => {
   return (
     <>
       {/* Only Visible for Desktop Deveices */}
-      <div ref={containerRef} className="w-full px-6 min-h-150 hidden lg:block">
+      <div
+        ref={containerRef}
+        id="graphics"
+        className="w-full px-6 min-h-150 hidden lg:block"
+      >
         {isInView && (
           <Masonry
             items={work}
