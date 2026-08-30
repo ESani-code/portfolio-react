@@ -5,7 +5,7 @@ import TextType from "../../components/ui/TextType";
 const Creative = () => {
   return (
     <section className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden">
-      <div className="absolute inset-0 w-full h-full z-0 ">
+      <div className="absolute inset-0 w-full h-full z-0 pointer-events-none lg:pointer-events-auto">
         <HalftoneReveal
           src="https://res.cloudinary.com/don03rsnm/image/upload/v1787397958/Screenshot_2025-05-23_142812_h4vaay.png"
           inkColor="#120D07"
