@@ -1,9 +1,11 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-import Masonry from "../../components/Masonry";
-import { work, graphics } from "./GraphicWorks";
+// import Masonry from "../../components/Masonry";
+// import { work, graphics } from "./GraphicWorks";
+import { graphics } from "./GraphicWorks";
 import Carousel from "./Carousel";
+import NewCarousel from "./NewCarousel";
 
 const Creative = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -13,23 +15,20 @@ const Creative = () => {
   return (
     <>
       {/* Only Visible for Desktop Deveices */}
-      <div
-        ref={containerRef}
-        id="graphics"
-        className="w-full px-6 min-h-150 hidden lg:block"
-      >
+      <div ref={containerRef} className="w-full  min-h-150 hidden lg:block">
         {isInView && (
-          <Masonry
-            items={work}
-            ease="bounce.out"
-            duration={1.1}
-            stagger={0.07}
-            animateFrom="bottom"
-            scaleOnHover
-            hoverScale={1.05}
-            blurToFocus
-            colorShiftOnHover={false}
-          />
+          // <Masonry
+          //   items={work}
+          //   ease="bounce.out"
+          //   duration={1.1}
+          //   stagger={0.07}
+          //   animateFrom="bottom"
+          //   scaleOnHover
+          //   hoverScale={1.05}
+          //   blurToFocus
+          //   colorShiftOnHover={false}
+          // />
+          <NewCarousel />
         )}
       </div>
 
