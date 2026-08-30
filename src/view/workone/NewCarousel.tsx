@@ -27,7 +27,7 @@ const NewCarousel = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="overflow-hidden w-full relative mx-auto"
+        className=" w-full relative mx-auto overflow-x-hidden overflow-y-visible py-6"
         onMouseEnter={() => setStopScroll(true)}
         onMouseLeave={() => setStopScroll(false)}
       >
@@ -44,15 +44,15 @@ const NewCarousel = () => {
             {[...cardData, ...cardData].map((card, index) => (
               <div
                 key={index}
-                className="w-96 mx-2 h-120 relative group hover:scale-103 transition-all duration-300"
+                className="w-96 mx-2 h-120 relative group rounded-sm hover:scale-101 transition-all duration-300"
               >
                 <img
                   src={card.image}
                   alt="card"
-                  className="w-full h-full object-cover rounded-sm"
+                  className="w-full h-full object-cover rounded-sm "
                 />
                 {/* <div className="flex items-center justify-center px-4 opacity-0 group-hover:opacity-100 transition-all duration-300 absolute bottom-0 backdrop-blur-md left-0 w-full h-full bg-black/20"> */}
-                <div className="absolute bottom-0 left-0 w-full h-full flex items-end justify-center pb-8 px-4 opacity-0 group-hover:opacity-100 transition-all duration-500 backdrop-blur-md bg-linear-to-t from-black/80 via-black/20 to-transparent [mask-image:linear-gradient(to_top,rgba(0,0,0,1)_15%,rgba(0,0,0,0)_80%)]">
+                <div className="absolute bottom-0 left-0 w-full h-full flex items-end justify-center pb-8 px-4 opacity-0 rounded-sm group-hover:opacity-100 transition-all duration-500 backdrop-blur-sm bg-linear-to-t from-black/60 via-black/20 to-transparent [mask-image:linear-gradient(to_top,rgba(0,0,0,1)_15%,rgba(0,0,0,0)_80%)]">
                   <p className="text-white text-lg font-semibold text-center">
                     {card.title}
                   </p>
