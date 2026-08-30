@@ -10,7 +10,7 @@ import NewCarousel from "./NewCarousel";
 const Creative = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const isInView = useInView(containerRef, { once: true, amount: 0.5 });
+  const isInView = useInView(containerRef, { once: true, amount: 0.3 });
 
   return (
     <>
