@@ -27,9 +27,13 @@ const App = () => {
       >
         <section className="flex flex-col gap-y-1">
           <Transistion />
-          <Suspense fallback={<Skeleton className="h-full w-full" />}>
-            <NavBar />
-          </Suspense>
+
+          <div className="hidden lg:block">
+            <Suspense fallback={<Skeleton className="h-full w-full" />}>
+              <NavBar />
+            </Suspense>
+          </div>
+
           <Suspense fallback={<Skeleton className="h-full w-full" />}>
             <Hero />
           </Suspense>
