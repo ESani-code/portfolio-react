@@ -12,16 +12,20 @@ const ContactBar = () => {
     },
   ];
   return (
-    <div className="absolute inset-0 z-100 w-full h-10 flex items-center justify-between px-8 pt-8">
-      <img
-        className="h-18"
-        src="https://res.cloudinary.com/don03rsnm/image/upload/v1788169036/fsdgArtboard_1_copy_2_8x_q6zsw7.png"
-        alt="Logo PNG"
-      />
-      <div className="items-end">
+    <div className="absolute inset-0 z-100 w-full h-10 flex items-center justify-between px-6 lg:px-8 pt-12 pointer-events-none">
+      <a className="pointer-events-none" href="/#">
+        <img
+          className="h-22"
+          src="https://res.cloudinary.com/don03rsnm/image/upload/v1788169036/fsdgArtboard_1_copy_2_8x_q6zsw7.png"
+          alt="Logo PNG"
+        />
+      </a>
+      <div className="items-end pointer-events-auto">
         {links.map(({ link, icon }) => (
-          <a className="pl-8" href={link}>
-            <i className={`bi text-3xl ${icon}`} />
+          <a className="pl-12" href={link}>
+            <i
+              className={`bi text-4xl ${icon} hover:text-accent-color transistion-all duration-200 ease-in-out`}
+            />
           </a>
         ))}
       </div>
