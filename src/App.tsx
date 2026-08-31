@@ -10,6 +10,7 @@ import Transistion from "./components/Transistion";
 const NavBar = lazy(() => import("./components/NavBar"));
 const About = lazy(() => import("./components/sections/About"));
 const WorkOne = lazy(() => import("./components/sections/WorkOne"));
+const WorkTwo = lazy(() => import("./components/sections/WorkTwo"));
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -42,6 +43,9 @@ const App = () => {
           </Suspense>
           <Suspense fallback={<Skeleton className="h-full w-full" />}>
             <WorkOne />
+          </Suspense>
+          <Suspense fallback={<Skeleton className="h-full w-full" />}>
+            <WorkTwo />
           </Suspense>
         </section>
       </ClickSpark>
