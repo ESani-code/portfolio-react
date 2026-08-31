@@ -2,7 +2,7 @@ import { useState } from "react";
 // import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { cardData } from "./GraphicWorks";
-const NewCarousel = () => {
+const DesktopCarousel = () => {
   const [stopScroll, setStopScroll] = useState(false);
 
   return (
@@ -68,4 +68,4 @@ const NewCarousel = () => {
   );
 };
 
-export default NewCarousel;
+export default DesktopCarousel;

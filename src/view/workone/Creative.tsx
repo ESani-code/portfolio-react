@@ -3,7 +3,7 @@ import { useInView } from "framer-motion";
 
 import { graphics } from "./GraphicWorks";
 import Carousel from "./Carousel";
-import NewCarousel from "./NewCarousel";
+import DesktopCarousel from "./DesktopCarousel";
 
 const Creative = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -18,7 +18,7 @@ const Creative = () => {
 
       {/* Only Visible for Desktop Deveices */}
       <div ref={containerRef} className="w-full  min-h-150 hidden lg:block">
-        {isInView && <NewCarousel />}
+        {isInView && <DesktopCarousel />}
       </div>
 
       {/* Only Visible for Mobile Deveices */}
