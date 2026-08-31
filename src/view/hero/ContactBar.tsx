@@ -1,16 +1,9 @@
+import { creativeLinks, developerLinks } from "./Links";
+import { useTheme } from "../../context/ThemeContext";
+
 const ContactBar = () => {
-  const links = [
-    {
-      link: "https://www.linkedin.com/in/emmanuel-sani-55944325a/",
-      icon: "bi-linkedin",
-    },
-    { link: "https://www.instagram.com/design_labsng/", icon: "bi-instagram" },
-    { link: "https://www.behance.net/emmanuelsani1", icon: "bi-behance" },
-    {
-      link: "https://www.linkedin.com/in/emmanuel-sani-55944325a/",
-      icon: "bi-c-circle-fill",
-    },
-  ];
+  const { theme } = useTheme();
+  const links = theme == "creative" ? creativeLinks : developerLinks;
   return (
     <div className="absolute inset-0 z-100 w-full h-10 flex items-center justify-between px-6 lg:px-8 pt-12 pointer-events-none">
       <a className="pointer-events-none" href="/#">

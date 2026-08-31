@@ -1,10 +1,12 @@
 import MagicRings from "../../components/MagicRings";
 import BlurText from "../../components/ui/BlurText";
 import TextType from "../../components/ui/TextType";
+import ContactBar from "./ContactBar";
 
 const Developer = () => {
   return (
     <section className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden">
+      <ContactBar />
       <div className="absolute inset-0 w-full h-full z-0">
         <MagicRings
           color="#ff4747"
