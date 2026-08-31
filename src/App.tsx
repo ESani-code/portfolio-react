@@ -8,7 +8,6 @@ import Hero from "./components/sections/Hero";
 import Transistion from "./components/Transistion";
 
 const NavBar = lazy(() => import("./components/NavBar"));
-// const Hero = lazy(() => import("./components/sections/Hero"));
 const About = lazy(() => import("./components/sections/About"));
 const WorkOne = lazy(() => import("./components/sections/WorkOne"));
 

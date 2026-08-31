@@ -8,20 +8,6 @@ const Developer = () => {
   return (
     <section className="flex flex-col md:flex-row gap-10 items-start w-full text-left p-6">
       <div className="w-full md:w-1/3 flex justify-center">
-        {/* <TiltedCard
-          imageSrc="https://res.cloudinary.com/don03rsnm/image/upload/v1787506329/me-pic_n6hym0.jpg"
-          altText="Personal Picture"
-          captionText="Creative at Heart"
-          containerHeight="300px"
-          containerWidth="300px"
-          imageHeight="300px"
-          imageWidth="300px"
-          rotateAmplitude={12}
-          scaleOnHover={1.05}
-          showMobileWarning={false}
-          showTooltip
-          displayOverlayContent={false}
-        /> */}
         <div style={{ height: "500px", position: "relative" }}>
           <GlareHover
             glareColor="#ffffff"

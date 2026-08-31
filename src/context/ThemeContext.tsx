@@ -33,8 +33,8 @@ const ThemeProvider = ({ children }: Props) => {
       // Keep the curtain down for a brief moment to simulate loading, then lift it
       setTimeout(() => {
         setIsTransitioning(false);
-      }, 500);
-    }, 1000);
+      }, 1300);
+    }, 500);
   };
 
   useEffect(() => {

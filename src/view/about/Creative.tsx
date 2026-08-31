@@ -1,5 +1,4 @@
 import GlareHover from "../../components/GlareHover";
-// import TiltedCard from "../../components/TiltedCard";
 
 const Creative = () => {
   return (
@@ -8,22 +7,6 @@ const Creative = () => {
       <div className="w-full lg:w-1/3 flex justify-center lg:justify-start">
         {/* Desktop View */}
         <div className="relative hidden lg:block items-start">
-          {/* <TiltedCard
-            imageSrc="https://res.cloudinary.com/don03rsnm/image/upload/v1787506329/me-pic_n6hym0.jpg"
-            altText="Personal Picture"
-            captionText="Creative at Heart"
-            containerHeight="500px"
-            containerWidth="500px"
-            imageHeight="500px"
-            imageWidth="500px"
-            rotateAmplitude={12}
-            scaleOnHover={1.05}
-            showMobileWarning={false}
-            showTooltip
-            displayOverlayContent={false}
-            shadow={true}
-          /> */}
-
           <div style={{ height: "600px", position: "relative" }}>
             <GlareHover
               glareColor="#ffffff"
@@ -43,20 +26,6 @@ const Creative = () => {
         </div>
         {/* Mobile View */}
         <div className="block lg:hidden ">
-          {/* <TiltedCard
-            imageSrc="https://res.cloudinary.com/don03rsnm/image/upload/v1787506329/me-pic_n6hym0.jpg"
-            altText="Personal Picture"
-            captionText="Creative at Heart"
-            containerHeight="350px"
-            containerWidth="350px"
-            imageHeight="400px"
-            imageWidth="400px"
-            rotateAmplitude={12}
-            scaleOnHover={1.05}
-            showMobileWarning={false}
-            showTooltip
-            displayOverlayContent={false}
-          /> */}
           <div style={{ height: "500px", position: "relative" }}>
             <GlareHover
               glareColor="#ffffff"
