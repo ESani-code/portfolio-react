@@ -26,7 +26,7 @@ const App = () => {
         sparkCount={9}
         duration={400}
       >
-        <section className="flex flex-col -mt-1 gap-y-1">
+        <section className="flex flex-col -mt-3 gap-y-3">
           <Transistion />
 
           <div className="hidden lg:block">

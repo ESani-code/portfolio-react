@@ -11,7 +11,11 @@ const Creative = () => {
   const isInView = useInView(containerRef, { once: true, amount: 0.3 });
 
   return (
-    <>
+    <div>
+      <div>
+        <h1 className="font-bold text-6xl pb-12">Graphics</h1>
+      </div>
+
       {/* Only Visible for Desktop Deveices */}
       <div ref={containerRef} className="w-full  min-h-150 hidden lg:block">
         {isInView && <NewCarousel />}
@@ -25,7 +29,7 @@ const Creative = () => {
           ))}
         </Carousel>
       </div>
-    </>
+    </div>
   );
 };
 
