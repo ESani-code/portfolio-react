@@ -21,7 +21,7 @@ const Creative = () => {
           contrast={1}
           invert={false}
           edge={0.76}
-          follow={0.1}
+          follow={0.07}
           idleReveal={0}
           trigger="hover"
         />
