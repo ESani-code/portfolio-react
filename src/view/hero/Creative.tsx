@@ -13,10 +13,10 @@ const Creative = () => {
           inkColor="#120D07"
           paperColor="#ffffff"
           mode="mono"
-          dotDensity={180}
-          angle={30}
+          dotDensity={110}
+          angle={45}
           revealRadius={0.3}
-          dotSize={1.02}
+          dotSize={1.0}
           shape="line"
           contrast={1}
           invert={false}
@@ -29,32 +29,33 @@ const Creative = () => {
 
       <div className="relative z-10 flex flex-col items-center justify-center pointer-events-none">
         <BlurText
-          text="Creative Mode"
+          text="Emmanuel Sani"
           delay={300}
           animateBy="letters"
           direction="top"
           // onAnimationComplete={handleAnimationComplete}
-          className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl mb-6 font-bold text-accent-color text-center justify-center"
+          className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl mb-6 font-black text-accent-color text-center justify-center"
         />
-        <div className="text-2xl md:text-3xl lg:text-4xl font-medium">
-          I am a
+        <div className="text-2xl md:text-3xl lg:text-5xl font-medium">
           <TextType
             text={[
-              " Graphic Designer",
-              " Motion Designer",
-              " Media Enthusiast",
+              "Graphic Designer",
+              "Motion Designer",
+              "UI Animator",
+              "Media Enthusiast",
+              "Creative & much more....",
             ]}
             typingSpeed={50}
             pauseDuration={2400}
             showCursor
             cursorCharacter="|"
-            // texts={["Welcome to React Bits! Good to see you!","Build some amazing experiences!"]}
             deletingSpeed={50}
             // variableSpeedEnabled={false}
             // variableSpeedMin={60}
             // variableSpeedMax={80}
             cursorBlinkDuration={0.5}
             className="text-accent-color"
+            // className="color-white"
           />
         </div>
       </div>
