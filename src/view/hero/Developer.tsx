@@ -55,7 +55,6 @@ const Developer = () => {
             pauseDuration={2400}
             showCursor
             cursorCharacter="|"
-            // texts={["Welcome to React Bits! Good to see you!","Build some amazing experiences!"]}
             deletingSpeed={50}
             // variableSpeedEnabled={false}
             // variableSpeedMin={60}
