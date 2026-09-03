@@ -48,12 +48,16 @@ const NavBar = () => {
                 opacity: 1,
                 paddingRight: 0,
                 paddingLeft: 0,
+                marginLeft: 0,
+                marginRight: 0,
               }}
               exit={{
                 width: 0,
                 opacity: 0,
-                paddingRight: -16,
-                paddingLeft: -16,
+                paddingRight: 0,
+                paddingLeft: 0,
+                marginLeft: -8,
+                marginRight: -8,
               }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="overflow-hidden whitespace-nowrap"
@@ -89,12 +93,16 @@ const NavBar = () => {
                 opacity: 1,
                 paddingLeft: 0,
                 paddingRight: 0,
+                marginLeft: 0,
+                marginRight: 0,
               }}
               exit={{
                 width: 0,
                 opacity: 0,
-                paddingLeft: -16,
-                paddingRight: -16,
+                paddingLeft: 0,
+                paddingRight: 0,
+                marginLeft: -8,
+                marginRight: -8,
               }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="overflow-hidden whitespace-nowrap"
