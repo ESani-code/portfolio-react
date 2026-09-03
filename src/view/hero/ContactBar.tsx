@@ -7,21 +7,28 @@ const ContactBar = () => {
   const links = theme == "creative" ? creativeLinks : developerLinks;
   return (
     <div className="absolute inset-0 z-100 w-full h-10 flex items-center justify-between px-6 lg:px-8 pt-12 pointer-events-none">
-      <a className="pointer-events-none" href="/#">
-        <img
-          className="h-18 lg:h-22"
-          src="https://res.cloudinary.com/don03rsnm/image/upload/v1788169036/fsdgArtboard_1_copy_2_8x_q6zsw7.png"
-          alt="Logo PNG"
-        />
-      </a>
+      <Magnetic
+        magneticDistance={120}
+        strength={0.2}
+        stiffness={80}
+        damping={8}
+      >
+        <a className="pointer-events-none" href="/#">
+          <img
+            className="h-18 lg:h-22"
+            src="https://res.cloudinary.com/don03rsnm/image/upload/v1788169036/fsdgArtboard_1_copy_2_8x_q6zsw7.png"
+            alt="Logo PNG"
+          />
+        </a>
+      </Magnetic>
 
       <div className="items-end pointer-events-auto">
         {links.map(({ link, icon }) => (
           <Magnetic
-            magneticDistance={110}
-            strength={0.35}
-            stiffness={60}
-            damping={5}
+            magneticDistance={120}
+            strength={0.2}
+            stiffness={80}
+            damping={8}
           >
             <a className=" pl-8 lg:pl-12" href={link}>
               <i
