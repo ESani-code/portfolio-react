@@ -1,10 +1,10 @@
-import { lazy } from "react";
+// import { lazy } from "react";
 import AnimateMode from "../AnimateMode.tsx";
-// import Creative from "../../view/hero/Creative.tsx";
-// import Developer from "../../view/hero/Developer.tsx";
+import Creative from "../../view/hero/Creative.tsx";
+import Developer from "../../view/hero/Developer.tsx";
 
-const Creative = lazy(() => import("../../view/hero/Creative.tsx"));
-const Developer = lazy(() => import("../../view/hero/Creative.tsx"));
+// const Creative = lazy(() => import("../../view/hero/Creative.tsx"));
+// const Developer = lazy(() => import("../../view/hero/Creative.tsx"));
 
 const Hero = () => {
   return (
