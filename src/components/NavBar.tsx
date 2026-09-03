@@ -65,6 +65,7 @@ const NavBar = () => {
               <AnimateMode
                 creative={<CreativeLeft />}
                 developer={<DeveloperLeft />}
+                className="px-3"
               />
             </motion.div>
           )}
@@ -110,6 +111,7 @@ const NavBar = () => {
               <AnimateMode
                 creative={<CreativeRight />}
                 developer={<DeveloperRight />}
+                className="px-3"
               />
             </motion.div>
           )}

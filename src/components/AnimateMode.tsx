@@ -4,9 +4,14 @@ import { useTheme } from "../context/ThemeContext";
 type AnimatedModeProps = {
   creative: React.ReactNode;
   developer: React.ReactNode;
+  className?: string;
 };
 
-export const AnimatedMode = ({ creative, developer }: AnimatedModeProps) => {
+export const AnimatedMode = ({
+  creative,
+  developer,
+  className = "",
+}: AnimatedModeProps) => {
   const { theme } = useTheme();
 
   return (
@@ -17,7 +22,7 @@ export const AnimatedMode = ({ creative, developer }: AnimatedModeProps) => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, x: -20 }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
-        className="w-full px-3"
+        className={`${className} w-full`}
       >
         {theme === "developer" ? developer : creative}
       </motion.div>
