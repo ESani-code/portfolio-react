@@ -17,7 +17,7 @@ export const AnimatedMode = ({ creative, developer }: AnimatedModeProps) => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, x: -20 }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
-        className="w-full"
+        className="w-full px-3"
       >
         {theme === "developer" ? developer : creative}
       </motion.div>
