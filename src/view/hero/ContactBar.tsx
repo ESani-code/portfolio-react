@@ -15,7 +15,7 @@ const ContactBar = () => {
       >
         <a className="pointer-events-none" href="/#">
           <img
-            className="h-18 lg:h-22"
+            className="h-16 md:h-18 lg:h-22 w-auto"
             src="https://res.cloudinary.com/don03rsnm/image/upload/v1788169036/fsdgArtboard_1_copy_2_8x_q6zsw7.png"
             alt="Logo PNG"
           />

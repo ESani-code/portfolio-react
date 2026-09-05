@@ -18,7 +18,7 @@ const NavBar = () => {
         // Expand the navbar when the hero section is no longer intersecting (visible)
         setIsExpanded(!entry.isIntersecting);
       },
-      { threshold: 0.1, rootMargin: "-80px 0px 0px 0px" },
+      { threshold: 0.2, rootMargin: "-80px 0px 0px 0px" },
     );
 
     observer.observe(heroElement);
