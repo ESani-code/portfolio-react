@@ -242,6 +242,11 @@ body {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@theme {
+  /* Added screen size for mobile phones */
+  --breakpoint-xs: 400px;
+}
+
 @layer components {
   .links {
     @apply text-sm px-2 font-medium rounded-sm hover:bg-accent-color whitespace-nowrap transition-all ease-in-out duration-300;

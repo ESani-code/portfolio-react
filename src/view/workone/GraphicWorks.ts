@@ -33,7 +33,7 @@ export const graphics = [
   "https://res.cloudinary.com/don03rsnm/image/upload/v1787855243/Welcome_Back_to_School_2_npwzgr.png",
   "https://res.cloudinary.com/don03rsnm/image/upload/v1767571873/gwork12_fvw8qq.jpg",
   "https://res.cloudinary.com/don03rsnm/image/upload/v1787855233/Website_Launch_V2_vlfsyb.png",
-  "https://res.cloudinary.com/don03rsnm/image/upload/v1767356404/Happy_New_Year_V4_dl6ubc.png",
+  // "https://res.cloudinary.com/don03rsnm/image/upload/v1767356404/Happy_New_Year_V4_dl6ubc.png",
   "https://res.cloudinary.com/don03rsnm/image/upload/v1776104555/IT_Chaplaincy_General_Meeting_V2_uro67l.png",
   "https://res.cloudinary.com/don03rsnm/image/upload/v1767357749/Founders_Day_uh6u7l.png",
   "https://res.cloudinary.com/don03rsnm/image/upload/v1767356310/Christmas_bwqjfn.png",

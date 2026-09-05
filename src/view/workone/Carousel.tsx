@@ -36,7 +36,7 @@ const Carousel = ({ children }: CarouselProps) => {
           <i className="bi bi-arrow-left" />
         </button>
         {/* Slider Viewport */}
-        <div className="relative w-full max-w-lg overflow-hidden rounded-xl bg-neutral-900/50">
+        <div className="relative xs:w-80 xs:h-100 md:w-full md:h-full max-w-lg overflow-hidden rounded-xl bg-neutral-900/50">
           {/* Sliding Track */}
           <div
             className="flex transition-transform duration-500 ease-in-out"
@@ -50,7 +50,7 @@ const Carousel = ({ children }: CarouselProps) => {
           </div>
 
           {/* Dots Overlay */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 bg-black/40 px-3 py-2 rounded-full backdrop-blur-sm">
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 bg-black/40 px-3 py-2 rounded-full backdrop-blur-sm">
             {items.map((_, index) => (
               <button
                 key={index}

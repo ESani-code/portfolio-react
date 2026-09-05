@@ -13,7 +13,9 @@ const Creative = () => {
   return (
     <div>
       <div>
-        <h1 className="font-bold text-6xl pb-12">Graphics</h1>
+        <h1 className="font-bold text-6xl pb-12 max-xs:text-3xl max-xs:pb-5">
+          Graphics
+        </h1>
       </div>
 
       {/* Only Visible for Desktop Deveices */}
@@ -25,7 +27,7 @@ const Creative = () => {
       <div className="max-xl p-4 block overflow-hidden lg:hidden">
         <Carousel>
           {graphics.map((link) => (
-            <img key={link} src={link} className="max-w-lg" />
+            <img key={link} src={link} className="w-full max-w-lg" />
           ))}
         </Carousel>
       </div>
