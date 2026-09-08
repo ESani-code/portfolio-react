@@ -1,5 +1,11 @@
+import { Bento } from "./Bento";
+
 const Creative = () => {
-  return <section>Create</section>;
+  return (
+    <section>
+      <Bento />
+    </section>
+  );
 };
 
 export default Creative;
