@@ -85,7 +85,7 @@ export const Bento = () => {
 
         <a
           href={"/resources/blog"}
-          className="pointer-events-none overflow-hidden md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:rotate-4 transition-all duration-200 ease-in-out relative bg-base-100 h-[330px] rounded-xl flex flex-col items-center justify-center px-5 py-6"
+          className="overflow-hidden md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:rotate-4 transition-all duration-200 ease-in-out relative bg-base-100 h-[330px] rounded-xl flex flex-col items-center justify-center px-5 py-6"
         >
           <p className="-rotate-3 mb-1 text-base-content">Blog & Guides</p>
           <h3 className="-rotate-3 text-2xl font-semibold text-center px-6 py-2 bg-white/75 rounded-full">
@@ -95,7 +95,7 @@ export const Bento = () => {
 
         <a
           href={"/resources/playbooks"}
-          className="pointer-events-none flex items-center justify-center overflow-hidden md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:-rotate-6 transition-all duration-200 ease-in-out relative bg-primary/20 h-[330px] rounded-xl flex flex-col items-center justify-center px-5 py-6"
+          className=" flex items-center justify-center overflow-hidden md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:-rotate-6 transition-all duration-200 ease-in-out relative bg-primary/20 h-[330px] rounded-xl  flex-col  px-5 py-6"
         >
           <p className="rotate-6 mb-1 text-base-content">Playbooks</p>
           <h3 className="rotate-6 text-2xl font-semibold text-center px-6 py-2 bg-accent-color rounded-full">
