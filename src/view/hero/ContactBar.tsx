@@ -6,7 +6,7 @@ const ContactBar = () => {
   const { theme } = useTheme();
   const links = theme == "creative" ? creativeLinks : developerLinks;
   return (
-    <div className="absolute inset-0 z-100 w-full h-10 flex items-center justify-center md:justify-between px-6 lg:px-8 pt-12 pointer-events-none">
+    <div className="absolute inset-0 z-100 w-full h-10 flex items-center justify-center md:justify-between px-6 lg:px-8 pt-16 pointer-events-none">
       <div className="hidden md:block">
         <Magnetic
           magneticDistance={120}
@@ -32,9 +32,9 @@ const ContactBar = () => {
             stiffness={80}
             damping={8}
           >
-            <a className=" pl-8 lg:pl-12" href={link}>
+            <a className="px-13 pl-0 lg:px-0 lg:pl-12" href={link}>
               <i
-                className={`bi text-3xl lg:text-4xl ${icon} hover:text-accent-color transistion-all duration-200 ease-in-out`}
+                className={`bi text-4xl md:text-3xl lg:text-4xl ${icon} hover:text-accent-color transistion-all duration-200 ease-in-out`}
               />
             </a>
           </Magnetic>
