@@ -38,10 +38,11 @@ export const Bento = () => {
         </div>
       </div>
 
+      {/* Portfolio Grid Start */}
       <div className="grid grid-cols-1 md:grid-cols-3 md:items-start md:justify-start gap-4 ">
         <a
           href={"/resources/freebies"}
-          className="md:col-span-2 overflow-hidden hover:scale-101 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:rotate-1 transition-all duration-200 ease-in-out h-[330px] overflow-hidden relative bg-accent/20 rounded-xl flex flex-row items-center gap-8 justify-between px-3 pt-3 pb-6"
+          className="md:col-span-2 overflow-hidden hover:scale-101 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:rotate-1 transition-all duration-200 ease-in-out h-[330px] relative bg-accent/20 rounded-xl flex flex-row items-center gap-8 justify-between px-3 pt-3 pb-6"
         >
           <div className="relative flex flex-col items-start justify-center ml-4 gap-0">
             <p className="-rotate-1 ml-4 mb-1 text-base-content">
@@ -86,6 +87,43 @@ export const Bento = () => {
         <a
           href={"/resources/blog"}
           className="overflow-hidden md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:rotate-4 transition-all duration-200 ease-in-out relative bg-base-100 h-[330px] rounded-xl flex flex-col items-center justify-center px-5 py-6"
+        >
+          <p className="-rotate-3 mb-1 text-base-content">Blog & Guides</p>
+          <h3 className="-rotate-3 text-2xl font-semibold text-center px-6 py-2 bg-white/75 rounded-full">
+            Comming Soon
+          </h3>
+        </a>
+        <a
+          href={"/resources/blog"}
+          className="overflow-hidden md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:rotate-4 transition-all duration-200 ease-in-out relative bg-base-100 h-[330px] rounded-xl flex flex-col items-center justify-center px-5 py-6"
+        >
+          <p className="-rotate-3 mb-1 text-base-content">Blog & Guides</p>
+          <h3 className="-rotate-3 text-2xl font-semibold text-center px-6 py-2 bg-white/75 rounded-full">
+            Comming Soon
+          </h3>
+        </a>
+        <a
+          href={"/resources/blog"}
+          className="overflow-hidden md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:rotate-4 transition-all duration-200 ease-in-out relative bg-base-100 h-[330px] rounded-xl flex flex-col items-center justify-center px-5 py-6"
+        >
+          <p className="-rotate-3 mb-1 text-base-content">Blog & Guides</p>
+          <h3 className="-rotate-3 text-2xl font-semibold text-center px-6 py-2 bg-white/75 rounded-full">
+            Comming Soon
+          </h3>
+        </a>
+
+        <a
+          href={"/resources/blog"}
+          className="md:col-span-2 overflow-hidden md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:rotate-4 transition-all duration-200 ease-in-out relative bg-base-100 h-[330px] rounded-xl flex flex-col items-center justify-center px-5 py-6"
+        >
+          <p className="-rotate-3 mb-1 text-base-content">Blog & Guides</p>
+          <h3 className="-rotate-3 text-2xl font-semibold text-center px-6 py-2 bg-white/75 rounded-full">
+            Comming Soon
+          </h3>
+        </a>
+        <a
+          href={"/resources/blog"}
+          className="md:col-span-2 overflow-hidden md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:rotate-4 transition-all duration-200 ease-in-out relative bg-base-100 h-[330px] rounded-xl flex flex-col items-center justify-center px-5 py-6"
         >
           <p className="-rotate-3 mb-1 text-base-content">Blog & Guides</p>
           <h3 className="-rotate-3 text-2xl font-semibold text-center px-6 py-2 bg-white/75 rounded-full">
