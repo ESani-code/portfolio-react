@@ -1,7 +1,7 @@
 // import { cn } from "../../lib/utils";
 // import { useState } from "react";
 
-import { Gift } from "lucide-react";
+import { Lollipop } from "lucide-react";
 // import Link from 'next/a';
 // import { Link } from 'react-router-dom';
 
@@ -14,21 +14,21 @@ export const Bento = () => {
       <div className="flex flex-col md:flex-row items-end justify-between w-full">
         <div className="flex flex-col my-12 w-full items-start justify-start gap-4">
           <div className="flex flex-col md:flex-row gap-2 items-end w-full justify-between ">
-            <h2 className="relative text-4xl md:text-5xl font-sans font-semibold max-w-xl text-left leading-[1em] text-base-content">
-              Private client work, <br />{" "}
+            <h2 className="relative text-4xl md:text-5xl font-sans font-semibold max-w-xl text-left leading-[1.1em] text-base-content">
+              Motion Designs <br />{" "}
               <span>
-                <Gift
+                <Lollipop
                   className="inline-flex text-accent fill-white rotate-12"
                   size={40}
-                  strokeWidth={2}
+                  strokeWidth={1.3}
                 />
               </span>{" "}
-              now public & free.
+              Enjoy the Eye Candy
             </h2>
-            <p className="max-w-sm font-semibold text-md text-neutral/50">
-              Working with us is like having an activation growth taskforce of a
-              Data Scientist, PLG Advisor, & Behavioral Designer in-house.
-              Always ready to go.
+            <p className="max-w-sm text-right font-semibold text-md text-neutral/50">
+              From Keyframes to Visuals, Wireframes to meshes From Keyframes to
+              Visuals, Wireframes to meshes From Keyframes to Visuals,
+              Wireframes to meshes
             </p>
           </div>
 
