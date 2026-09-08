@@ -1,9 +1,4 @@
-// import { cn } from "../../lib/utils";
-// import { useState } from "react";
-
 import { Lollipop } from "lucide-react";
-// import Link from 'next/a';
-// import { Link } from 'react-router-dom';
 
 export const Bento = () => {
   return (
