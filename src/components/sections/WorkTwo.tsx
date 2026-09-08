@@ -9,7 +9,7 @@ const WorkTwo = () => {
   const { theme } = useTheme();
   return (
     <section
-      id={theme === "creative" ? "graphics" : "tech-stack"}
+      id={theme === "creative" ? "motion-designs" : "tech-stack"}
       className="w-full flex flex-col justify-center items-start text-center"
     >
       <AnimateMode creative={<Creative />} developer={<Developer />} />

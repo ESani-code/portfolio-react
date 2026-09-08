@@ -1,5 +1,5 @@
 const Creative = () => {
-  return <div>Create</div>;
+  return <section>Create</section>;
 };
 
 export default Creative;
