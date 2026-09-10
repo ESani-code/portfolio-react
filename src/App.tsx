@@ -7,6 +7,7 @@ import { Skeleton } from "./components/ui/skeleton";
 
 import Transistion from "./components/Transistion";
 
+import Preloader from "./components/Preloader";
 const Hero = lazy(() => import("./components/sections/Hero"));
 const NavBar = lazy(() => import("./components/NavBar"));
 const About = lazy(() => import("./components/sections/About"));
@@ -28,6 +29,7 @@ const App = () => {
         duration={400}
       >
         <section className="flex flex-col -mt-3 gap-y-3">
+          <Preloader />
           <Transistion />
 
           <div className="hidden lg:block">
