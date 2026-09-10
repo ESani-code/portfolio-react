@@ -32,7 +32,7 @@ export const motionDesigns: motionDesigType[] = [
     href: href,
     colSpan: "2",
     rowSpan: "1",
-    hoverRotate: "-rotate-3",
+    hoverRotate: "rotate-3",
   },
   {
     title: "First Work",
@@ -40,6 +40,6 @@ export const motionDesigns: motionDesigType[] = [
     href: href,
     colSpan: "2",
     rowSpan: "1",
-    hoverRotate: "-rotate-3",
+    hoverRotate: "rotate-3",
   },
 ];
