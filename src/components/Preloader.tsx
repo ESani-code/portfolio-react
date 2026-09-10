@@ -11,7 +11,7 @@ const Preloader = ({ duration = 3000, onComplete }: PreloaderProps) => {
 
   useEffect(() => {
     // 1. Prevent body scrolling while preloader is visible
-    document.body.style.overflow = "hidden";
+    // document.body.style.overflow = "hidden";
 
     // 2. Trigger the exit animation after the duration expires
     const timer = setTimeout(() => {
@@ -20,7 +20,7 @@ const Preloader = ({ duration = 3000, onComplete }: PreloaderProps) => {
 
     return () => {
       clearTimeout(timer);
-      document.body.style.overflow = "";
+      //   document.body.style.overflow = "";
     };
   }, [duration]);
 
@@ -28,7 +28,7 @@ const Preloader = ({ duration = 3000, onComplete }: PreloaderProps) => {
     <AnimatePresence
       onExitComplete={() => {
         // Restore body scroll & notify parent when exit transition completes
-        document.body.style.overflow = "";
+        // document.body.style.overflow = "";
         onComplete?.();
       }}
     >
@@ -36,9 +36,9 @@ const Preloader = ({ duration = 3000, onComplete }: PreloaderProps) => {
         <motion.div
           key="preloader-overlay"
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, y: "-100%" }}
+          exit={{ opacity: 1, y: "-100%" }}
           transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
-          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black text-white"
+          className="w-full h-full fixed inset-0 z-9999 flex flex-col items-center justify-center bg-black text-white"
         >
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}

@@ -6,7 +6,7 @@ const ContactBar = () => {
   const { theme } = useTheme();
   const links = theme == "creative" ? creativeLinks : developerLinks;
   return (
-    <div className="absolute inset-0 z-100 w-full h-10 flex items-center justify-center md:justify-between px-6 lg:px-8 pt-16 pointer-events-none">
+    <div className="absolute inset-0 z-50 w-full h-10 flex items-center justify-center md:justify-between px-6 lg:px-8 pt-16 pointer-events-none">
       <div className="hidden md:block">
         <Magnetic
           magneticDistance={120}
