@@ -6,7 +6,7 @@ interface PreloaderProps {
   onComplete?: () => void; // Callback when the preloader finishes exiting
 }
 
-const Preloader = ({ duration = 5000, onComplete }: PreloaderProps) => {
+const Preloader = ({ duration = 3000, onComplete }: PreloaderProps) => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {

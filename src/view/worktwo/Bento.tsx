@@ -1,6 +1,5 @@
 import { Lollipop } from "lucide-react";
 import { motionDesigns } from "./motiondesigns";
-// import { hover } from "motion/react";
 
 export const Bento = () => {
   return (
@@ -45,16 +44,16 @@ export const Bento = () => {
         {/* Item Card */}
 
         {motionDesigns.map(
-          ({ href, colSpan, rowSpan, hoverRotate, title }, index) => (
+          ({ href, colSpan, rowSpan, hoverRotate, tools, title }, index) => (
             <a
               key={index}
               href={href}
-              className={`overflow-hidden col-span-${colSpan} md:row-span-${rowSpan} h-full md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:${hoverRotate} transition-all duration-200 ease-in-out relative bg-sidebar rounded-xl flex flex-col items-center justify-between px-3 py-6`}
+              className={`overflow-hidden col-span-${colSpan} md:row-span-${rowSpan} min-h-[330px] h-full md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:${hoverRotate} transition-all duration-200 ease-in-out relative bg-sidebar rounded-xl flex flex-col items-center justify-between px-3 py-6`}
             >
               <div className="relative flex flex-col w-full h-full items-center justify-end gap-0">
                 <div className="flex flex-col items-center justify-between">
-                  <p className="mb-1 text-center">1,000 downloads</p>
-                  <h3 className=" text-2xl whitespace-nowrap font-semibold text-center px-6 py-2 bg-base-content/90 text-white rounded-full">
+                  <p className="text-center text-sm">{tools}</p>
+                  <h3 className=" text-3xl whitespace-nowrap font-semibold text-center px-6 py-2 bg-base-content/90 text-white rounded-full">
                     {title}
                   </h3>
                 </div>
@@ -65,6 +64,7 @@ export const Bento = () => {
           ),
         )}
 
+        {/* 
         <a
           href={"/resources/freebies"}
           className="overflow-hidden md:row-span-2 h-full md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:rotate-3 transition-all duration-200 ease-in-out relative bg-sidebar rounded-xl flex flex-col items-center justify-between px-3 py-6"
@@ -165,7 +165,7 @@ export const Bento = () => {
           <h3 className="rotate-6 text-2xl font-semibold text-center px-6 py-2 bg-accent-color rounded-full">
             View More
           </h3>
-        </a>
+        </a> */}
       </div>
     </section>
   );
