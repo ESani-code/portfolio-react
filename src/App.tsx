@@ -6,11 +6,11 @@ import { Skeleton } from "./components/ui/skeleton";
 // import Hero from "./components/sections/Hero";
 
 import Preloader from "./components/Preloader";
-import NavBar from "./components/NavBar";
+// import NavBar from "./components/NavBar";
 import Transistion from "./components/Transistion";
 
 const Hero = lazy(() => import("./components/sections/Hero"));
-// const NavBar = lazy(() => import("./components/NavBar"));
+const NavBar = lazy(() => import("./components/NavBar"));
 const About = lazy(() => import("./components/sections/About"));
 const WorkOne = lazy(() => import("./components/sections/WorkOne"));
 const WorkTwo = lazy(() => import("./components/sections/WorkTwo"));
