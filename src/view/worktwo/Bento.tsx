@@ -1,4 +1,6 @@
 import { Lollipop } from "lucide-react";
+import { motionDesigns } from "./motiondesigns";
+// import { hover } from "motion/react";
 
 export const Bento = () => {
   return (
@@ -40,18 +42,42 @@ export const Bento = () => {
 
       {/* Portfolio Grid Start */}
       <div className="grid grid-cols-1 md:grid-cols-3 md:items-start md:justify-start gap-4 ">
+        {/* Item Card */}
+
+        {motionDesigns.map(
+          ({ href, colSpan, rowSpan, hoverRotate, title }, index) => (
+            <a
+              key={index}
+              href={href}
+              className={`overflow-hidden col-span-${colSpan} md:row-span-${rowSpan} h-full md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:${hoverRotate} transition-all duration-200 ease-in-out relative bg-sidebar rounded-xl flex flex-col items-center justify-between px-3 py-6`}
+            >
+              <div className="relative flex flex-col w-full h-full items-center justify-end gap-0">
+                <div className="flex flex-col items-center justify-between">
+                  <p className="mb-1 text-center">1,000 downloads</p>
+                  <h3 className=" text-2xl whitespace-nowrap font-semibold text-center px-6 py-2 bg-base-content/90 text-white rounded-full">
+                    {title}
+                  </h3>
+                </div>
+              </div>
+
+              <div className="w-full object-fill rounded-xl"></div>
+            </a>
+          ),
+        )}
+
         <a
           href={"/resources/freebies"}
-          className="md:col-span-2 overflow-hidden hover:scale-101 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:rotate-1 transition-all duration-200 ease-in-out h-[330px] relative bg-accent/20 rounded-xl flex flex-row items-center gap-8 justify-between px-3 pt-3 pb-6"
+          className="overflow-hidden md:row-span-2 h-full md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:rotate-3 transition-all duration-200 ease-in-out relative bg-sidebar rounded-xl flex flex-col items-center justify-between px-3 py-6"
         >
-          <div className="relative flex flex-col items-start justify-center ml-4 gap-0">
-            <p className="-rotate-1 ml-4 mb-1 text-base-content">
-              1,000 downloads
-            </p>
-            <h3 className="-rotate-1 text-2xl whitespace-nowrap font-semibold text-center px-6 py-2 bg-base-content/90 text-white rounded-full">
-              UX + Product-Led
-            </h3>
+          <div className="relative flex flex-col w-full h-full items-center justify-end gap-0">
+            <div className="flex flex-col items-center justify-between">
+              <p className="mb-1 text-center">1,000 downloads</p>
+              <h3 className=" text-2xl whitespace-nowrap font-semibold text-center px-6 py-2 bg-base-content/90 text-white rounded-full">
+                UX + Product-Led
+              </h3>
+            </div>
           </div>
+
           <div className="w-full object-fill rounded-xl"></div>
         </a>
 
