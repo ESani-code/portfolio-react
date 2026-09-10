@@ -48,7 +48,7 @@ export const Bento = () => {
             <a
               key={index}
               href={href}
-              className={`overflow-hidden col-span-${colSpan} md:row-span-${rowSpan} min-h-[330px] h-full md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:${hoverRotate} transition-all duration-200 ease-in-out relative bg-sidebar rounded-xl flex flex-col items-center justify-between px-3 py-6`}
+              className={`overflow-hidden md:col-span-${colSpan} md:row-span-${rowSpan} min-h-[330px] h-full md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:${hoverRotate} transition-all duration-200 ease-in-out relative bg-sidebar rounded-xl flex flex-col items-center justify-between px-3 py-6`}
             >
               <div className="relative flex flex-col w-full h-full items-center justify-end gap-0">
                 <div className="flex flex-col items-center justify-between">
