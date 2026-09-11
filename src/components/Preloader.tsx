@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { InfinityLoader } from "./InfinityLoader";
 
 interface PreloaderProps {
   duration?: number;
@@ -41,8 +42,8 @@ const Preloader = ({ duration = 3000, onComplete }: PreloaderProps) => {
           className="w-full h-full fixed inset-0 z-9999 flex flex-col items-center justify-center bg-black text-white"
         >
           <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: [0.8, 1.1, 1], opacity: 1 }}
+            initial={{ scale: 1.0, opacity: 0.8 }}
+            animate={{ scale: 1.2, opacity: 1 }}
             transition={{
               duration: 1,
               repeat: Infinity,
@@ -50,10 +51,11 @@ const Preloader = ({ duration = 3000, onComplete }: PreloaderProps) => {
             }}
             className="flex flex-col items-center gap-4"
           >
-            <span className="text-4xl md:text-6xl font-bold text-accent-color tracking-widest uppercase">
+            <InfinityLoader size={160} />
+            {/* <span className="text-4xl md:text-6xl font-bold text-accent-color tracking-widest uppercase">
               Welcome
             </span>
-            <div className="w-16 h-1 bg-accent-color rounded-full animate-pulse" />
+            <div className="w-16 h-1 bg-accent-color rounded-full animate-pulse" /> */}
           </motion.div>
         </motion.div>
       )}
