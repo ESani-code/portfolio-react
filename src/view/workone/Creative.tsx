@@ -13,7 +13,7 @@ const Creative = () => {
   return (
     <div>
       <div>
-        <h1 className="font-bold text-6xl pb-12 max-xs:text-3xl max-xs:pb-5">
+        <h1 className="font-bold text-accent-color text-6xl pb-12 max-xs:text-3xl max-xs:pb-5">
           Graphics
         </h1>
       </div>
