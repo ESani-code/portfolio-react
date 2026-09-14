@@ -18,10 +18,10 @@ export const AnimatedMode = ({
     <AnimatePresence mode="wait">
       <motion.div
         key={theme}
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, x: -20 }}
-        transition={{ duration: 0.4, ease: "easeInOut" }}
+        transition={{ duration: 1.7, ease: "easeInOut" }}
         className={`${className} w-full`}
       >
         {theme === "developer" ? developer : creative}
