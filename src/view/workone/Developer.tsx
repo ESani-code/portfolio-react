@@ -1,5 +1,5 @@
 const Developer = () => {
-  return <div></div>;
+  return <div>Tech Stack here</div>;
 };
 
 export default Developer;

@@ -1,5 +1,5 @@
 const Developer = () => {
-  return <div>Develop</div>;
+  return <div>Developer Projects Here</div>;
 };
 
 export default Developer;
