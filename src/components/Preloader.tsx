@@ -45,7 +45,7 @@ const Preloader = ({ duration = 3000, onComplete }: PreloaderProps) => {
             initial={{ scale: 1.0, opacity: 0.8 }}
             animate={{ scale: 1.2, opacity: 1 }}
             transition={{
-              duration: 1,
+              duration: 2,
               repeat: Infinity,
               repeatType: "reverse",
             }}

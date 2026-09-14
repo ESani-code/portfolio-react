@@ -1,0 +1,20 @@
+import AnimateMode from "../AnimateMode";
+
+import Creative from "../../view/contact/Creative";
+import Developer from "../../view/contact/Developer";
+
+import { useTheme } from "../../context/ThemeContext";
+
+const Contact = () => {
+  const { theme } = useTheme();
+  return (
+    <section
+      id={theme === "creative" ? "motion-designs" : "tech-stack"}
+      className="w-full flex flex-col justify-center items-start text-center"
+    >
+      <AnimateMode creative={<Creative />} developer={<Developer />} />
+    </section>
+  );
+};
+
+export default Contact;

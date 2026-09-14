@@ -14,6 +14,7 @@ const NavBar = lazy(() => import("./components/NavBar"));
 const About = lazy(() => import("./components/sections/About"));
 const WorkOne = lazy(() => import("./components/sections/WorkOne"));
 const WorkTwo = lazy(() => import("./components/sections/WorkTwo"));
+const Contact = lazy(() => import("./components/sections/Contact"));
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -50,6 +51,9 @@ const App = () => {
           </Suspense>
           <Suspense fallback={<Skeleton className="h-full w-full" />}>
             <WorkTwo />
+          </Suspense>
+          <Suspense fallback={<Skeleton className="h-full w-full" />}>
+            <Contact />
           </Suspense>
         </section>
       </ClickSpark>
