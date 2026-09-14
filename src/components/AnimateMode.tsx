@@ -21,7 +21,7 @@ export const AnimatedMode = ({
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, x: -20 }}
-        transition={{ duration: 1.7, ease: "easeInOut" }}
+        transition={{ duration: 1.6, ease: "easeInOut" }}
         className={`${className} w-full`}
       >
         {theme === "developer" ? developer : creative}
