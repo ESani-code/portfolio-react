@@ -7,7 +7,7 @@ type motionDesigType = {
   hoverRotate: string;
 };
 
-const href = "/resources/freebies";
+const href = "/motion-designs";
 
 export const motionDesigns: motionDesigType[] = [
   {
