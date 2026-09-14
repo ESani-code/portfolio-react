@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { CreativeLeft, CreativeRight } from "../view/navbar/Creative";
 import { DeveloperLeft, DeveloperRight } from "../view/navbar/Developer";
-import ToggleSwitch from "./ToggleSwitch";
+// import ToggleSwitch from "./ToggleSwitch";
 import { motion, AnimatePresence } from "framer-motion";
 import NavAnimate from "./NavAnimate";
+import ToggleIcon from "./ToggleIcon";
 
 const NavBar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -71,10 +72,17 @@ const NavBar = () => {
           )}
         </AnimatePresence>
 
-        {/* Theme Toggle in the Center */}
-        <div className={isExpanded ? `` : `px-3`}>
+        {/* Theme Toggle with Switch in the Center */}
+        {/* <div className={isExpanded ? `` : `px-3`}
           <div className="bg-accent/40 border-1/80 px-3 py-1 rounded-sm">
-            <ToggleSwitch />
+            <ToggleSwitch />            
+          </div>
+        </div> */}
+
+        {/* Theme Toggle with Icon in the Center */}
+        <div className={isExpanded ? `` : `px-3`}>
+          <div className="px-0.5 py-0.5 -my-2 overflow-hidden rounded-sm hover:scale-110 transition-all:ease-in-out duration-300">
+            <ToggleIcon size={50} />
           </div>
         </div>
 
