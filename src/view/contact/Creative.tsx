@@ -5,8 +5,10 @@ const Creative = () => {
   const { theme } = useTheme();
   const links = theme == "creative" ? creativeLinks : developerLinks;
   return (
-    <section className="h-screen">
-      <h1 className="text-9xl font-black pt-10">LET'S CONNECT</h1>
+    <section className="h-screen gap-y-8">
+      <h1 className="text-9xl font-black pt-10 text-accent-color">
+        LET'S CONNECT
+      </h1>
 
       {/* Links & extra information */}
       <div className="px-10 flex flex-row items-center justify-between">
