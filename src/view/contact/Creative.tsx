@@ -6,7 +6,7 @@ const Creative = () => {
   const links = theme == "creative" ? creativeLinks : developerLinks;
   return (
     <section className="h-screen">
-      <h1 className="text-9xl font-black pt-10">CONTACT</h1>
+      <h1 className="text-9xl font-black pt-10">LET'S CONNECT</h1>
 
       {/* Links & extra information */}
       <div className="px-10 flex flex-row items-center justify-between">
