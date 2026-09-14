@@ -10,8 +10,10 @@ export const Bento = () => {
       <div className="flex flex-col md:flex-row items-end justify-between w-full">
         <div className="flex flex-col my-12 w-full items-start justify-start gap-4">
           <div className="flex flex-col md:flex-row gap-2 items-end w-full justify-between ">
-            <h2 className="relative text-4xl md:text-5xl font-sans font-semibold max-w-xl text-left leading-[1.1em] text-base-content">
-              Motion Designs <br />{" "}
+            <h2 className="relative text-4xl md:text-5xl font-semibold max-w-xl text-left leading-[1.1em] ">
+              <span className="text-accent-color">
+                Motion Designs <br />{" "}
+              </span>
               <span>
                 <Lollipop
                   className="inline-flex text-accent fill-white rotate-12"
