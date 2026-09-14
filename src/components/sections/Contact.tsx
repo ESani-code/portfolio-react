@@ -8,12 +8,12 @@ import { useTheme } from "../../context/ThemeContext";
 const Contact = () => {
   const { theme } = useTheme();
   return (
-    <section
+    <footer
       id={theme === "creative" ? "contact" : "contact"}
       className="w-full flex flex-col justify-center items-start text-center"
     >
       <AnimateMode creative={<Creative />} developer={<Developer />} />
-    </section>
+    </footer>
   );
 };
 
