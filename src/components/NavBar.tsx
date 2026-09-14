@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { CreativeLeft, CreativeRight } from "../view/navbar/Creative";
 import { DeveloperLeft, DeveloperRight } from "../view/navbar/Developer";
-import AnimateMode from "./AnimateMode";
 import ToggleSwitch from "./ToggleSwitch";
 import { motion, AnimatePresence } from "framer-motion";
+import NavAnimate from "./NavAnimate";
 
 const NavBar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -62,7 +62,7 @@ const NavBar = () => {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="overflow-hidden whitespace-nowrap"
             >
-              <AnimateMode
+              <NavAnimate
                 creative={<CreativeLeft />}
                 developer={<DeveloperLeft />}
                 className="px-3"
@@ -108,7 +108,7 @@ const NavBar = () => {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="overflow-hidden whitespace-nowrap"
             >
-              <AnimateMode
+              <NavAnimate
                 creative={<CreativeRight />}
                 developer={<DeveloperRight />}
                 className="px-3"
