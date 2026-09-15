@@ -24,7 +24,7 @@ const ContactBar = () => {
         </Magnetic>
       </div>
 
-      <div className="items-center md:items-end pointer-events-auto">
+      <div className="flex items-center md:items-end pointer-events-auto">
         {links.map(({ link, icon }) => (
           <Magnetic
             magneticDistance={120}
@@ -32,9 +32,9 @@ const ContactBar = () => {
             stiffness={80}
             damping={8}
           >
-            <a className="px-13 pl-0 lg:px-0 lg:pl-12" href={link}>
+            <a className="px-10 xs:px-8 pl-0 lg:px-0 lg:pl-12" href={link}>
               <i
-                className={`bi text-4xl md:text-3xl lg:text-4xl ${icon} hover:text-accent-color transistion-all duration-200 ease-in-out`}
+                className={`bi text-3xl md:text-3xl lg:text-4xl ${icon} hover:text-accent-color transistion-all duration-200 ease-in-out`}
               />
             </a>
           </Magnetic>
