@@ -26,7 +26,7 @@ const Creative = () => {
         </div>
         {/* Mobile View */}
         <div className="block lg:hidden ">
-          <div style={{ height: "500px", position: "relative" }}>
+          <div className="h-125 relative">
             <GlareHover
               glareColor="#ffffff"
               glareOpacity={0.3}
@@ -63,9 +63,9 @@ const Creative = () => {
         {/* ml-auto pushes this block to the right side of its container on desktop */}
         <div className="md:ml-auto w-full md:w-[65%] lg:ml-6 flex flex-col items-start gap-8">
           <p className="text-sm md:text-base text-white opacity-80 leading-relaxed font-light">
-            Bringing your vision to life quickly and efficiently—whether it's
-            branding, apps, or websites—I've got it covered, delivering smooth
-            and effective solutions from start to finish.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
+            quisquam amet ipsam mollitia eveniet non aspernatur, perspiciatis
+            repellat ex voluptates?
           </p>
 
           {/* Pill Button */}
