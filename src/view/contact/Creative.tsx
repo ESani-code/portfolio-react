@@ -6,7 +6,7 @@ const Creative = () => {
   const links = theme == "creative" ? creativeLinks : developerLinks;
   return (
     <section className="h-screen gap-y-8">
-      <h1 className="text-9xl font-black pt-10 text-accent-color">
+      <h1 className="text-5xl md:text-6xl lg:text-9xl font-black pt-10 text-accent-color">
         LET'S CONNECT
       </h1>
 
