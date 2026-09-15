@@ -26,7 +26,7 @@ const Creative = () => {
         </div>
         {/* Mobile View */}
         <div className="block lg:hidden ">
-          <div className="h-125 relative">
+          <div className="h-60 relative">
             <GlareHover
               glareColor="#ffffff"
               glareOpacity={0.3}
@@ -34,11 +34,12 @@ const Creative = () => {
               glareSize={300}
               transitionDuration={800}
               playOnce={false}
+              width="280px"
+              height="280px"
             >
               <img
                 src="https://res.cloudinary.com/don03rsnm/image/upload/v1787506329/me-pic_n6hym0.jpg"
                 alt="Personal Picture"
-                className="h-80"
               />
             </GlareHover>
           </div>
