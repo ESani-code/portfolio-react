@@ -38,6 +38,7 @@ const Creative = () => {
               <img
                 src="https://res.cloudinary.com/don03rsnm/image/upload/v1787506329/me-pic_n6hym0.jpg"
                 alt="Personal Picture"
+                className="h-80"
               />
             </GlareHover>
           </div>
