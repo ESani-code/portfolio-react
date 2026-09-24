@@ -46,16 +46,37 @@ export const Bento = () => {
         {/* Item Card */}
 
         {motionDesigns.map(
-          ({ href, colSpan, rowSpan, hoverRotate, tools, title }, index) => (
+          (
+            {
+              href,
+              colSpan,
+              rowSpan,
+              hoverRotate,
+              tools,
+              title,
+              thumbnail,
+              alt,
+            },
+            index,
+          ) => (
             <a
               key={index}
               href={href}
-              className={`overflow-hidden md:col-span-${colSpan} md:row-span-${rowSpan} min-h-[330px] h-full md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:${hoverRotate} transition-all duration-200 ease-in-out relative bg-sidebar rounded-xl flex flex-col items-center justify-between px-3 py-6`}
+              className={`overflow-hidden md:col-span-${colSpan} md:row-span-${rowSpan} min-h-82.5 h-full md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:${hoverRotate} transition-all duration-200 ease-in-out relative bg-sidebar rounded-xl flex flex-col items-center justify-between px-3 py-6`}
             >
+              {/* 1. Full Cover Background Image */}
+              {thumbnail && (
+                <img
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  src={thumbnail}
+                  alt={alt || title}
+                />
+              )}
+
               <div className="relative flex flex-col w-full h-full items-center justify-end gap-0">
                 <div className="flex flex-col items-center justify-between">
-                  <p className="text-center text-sm">{tools}</p>
-                  <h3 className=" text-3xl whitespace-nowrap font-semibold text-center px-6 py-2 bg-base-content/90 text-white rounded-full">
+                  <p className="z-10 text-center text-sm">{tools}</p>
+                  <h3 className="z-10 text-3xl whitespace-nowrap font-semibold text-center px-6 py-2 bg-base-content/90 text-white rounded-full">
                     {title}
                   </h3>
                 </div>
