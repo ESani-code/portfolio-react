@@ -73,6 +73,8 @@ export const Bento = () => {
                 />
               )}
 
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent z-10" />
+
               <div className="relative flex flex-col w-full h-full items-center justify-end gap-0">
                 <div className="flex flex-col items-center justify-between">
                   <p className="z-10 text-center text-sm">{tools}</p>
