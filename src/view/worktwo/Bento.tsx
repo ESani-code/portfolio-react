@@ -9,7 +9,7 @@ export const Bento = () => {
     >
       <div className="flex flex-col md:flex-row items-end justify-between ">
         <div className="flex flex-col my-6 md:my-12 w-full items-start justify-start gap-4">
-          <div className="flex flex-col md:flex-row gap-2 pl-8 md:pl-0 items-center md:items-end w-full justify-between ">
+          <div className="flex flex-col md:flex-row gap-2  items-center md:items-end w-full justify-between ">
             <div className="w-full items-center ">
               <h2 className="relative text-6xl mb-2 md:mb-0 md:text-5xl max-w-xl text-center md:text-left leading-[1.1em] text-accent-color font-black">
                 Motion Designs
