@@ -8,29 +8,32 @@ export const Bento = () => {
       className=" bg-sidebar rounded-lg md:px-8 lg:px-12 py-2  md:py-4 my-5 w-full  mx-auto"
     >
       <div className="flex flex-col md:flex-row items-end justify-between ">
-        <div className="flex flex-col my-12 w-full items-start justify-start gap-4">
+        <div className="flex flex-col my-6 md:my-12 w-full items-start justify-start gap-4">
           <div className="flex flex-col md:flex-row gap-2 pl-8 md:pl-0 items-center md:items-end w-full justify-between ">
-            <h2 className="relative text-4xl md:text-5xl font-semibold max-w-xl text-left leading-[1.1em] ">
-              <span className="text-accent-color">
-                Motion Designs <br />{" "}
-              </span>
-              <span>
-                <Lollipop
-                  className="inline-flex text-accent fill-white rotate-12"
-                  size={40}
-                  strokeWidth={1.3}
-                />
-              </span>{" "}
-              Enjoy the Eye Candy
-            </h2>
-            <p className="max-w-sm text-right font-semibold text-md text-neutral/50">
+            <div className="w-full items-center ">
+              <h2 className="relative text-6xl mb-2 md:mb-0 md:text-5xl max-w-xl text-center md:text-left leading-[1.1em] text-accent-color font-black">
+                Motion Designs
+              </h2>
+              <h2 className="relative text-4xl md:text-5xl font-semibold max-w-xl text-center md:text-left leading-[1.1em] ">
+                <span>
+                  <Lollipop
+                    className="inline-flex text-accent fill-white rotate-12"
+                    size={40}
+                    strokeWidth={1.3}
+                  />
+                </span>{" "}
+                Enjoy the Eye Candy
+              </h2>
+            </div>
+
+            <p className="max-w-sm text-center mt-4 md:mt-0 md:text-right font-semibold text-md text-neutral/50">
               From Keyframes to Visuals, Wireframes to meshes From Keyframes to
               Visuals, Wireframes to meshes From Keyframes to Visuals,
               Wireframes to meshes
             </p>
           </div>
 
-          <div className="flex flex-row text-accent gap-6 items-start justify-center pl-8 md:pl-0">
+          <div className="w-full flex flex-row text-accent gap-6 items-center md:items-start justify-center md:pl-0">
             <p className="text-white/80 whitespace-nowrap font-medium">
               +1,000 Downloads
             </p>
