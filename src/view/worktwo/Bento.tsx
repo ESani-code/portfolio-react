@@ -5,11 +5,11 @@ export const Bento = () => {
   return (
     <section
       id="free-tools"
-      className=" bg-sidebar rounded-lg md:px-8 lg:px-12 py-4 my-5 max-w-8xl mx-auto"
+      className=" bg-sidebar rounded-lg md:px-8 lg:px-12 py-2  md:py-4 my-5 w-full  mx-auto"
     >
-      <div className="flex flex-col md:flex-row items-end justify-between w-full">
+      <div className="flex flex-col md:flex-row items-end justify-between ">
         <div className="flex flex-col my-12 w-full items-start justify-start gap-4">
-          <div className="flex flex-col md:flex-row gap-2 items-end w-full justify-between ">
+          <div className="flex flex-col md:flex-row gap-2 pl-8 md:pl-0 items-center md:items-end w-full justify-between ">
             <h2 className="relative text-4xl md:text-5xl font-semibold max-w-xl text-left leading-[1.1em] ">
               <span className="text-accent-color">
                 Motion Designs <br />{" "}
@@ -30,7 +30,7 @@ export const Bento = () => {
             </p>
           </div>
 
-          <div className="flex flex-row text-accent gap-6 items-start justify-center">
+          <div className="flex flex-row text-accent gap-6 items-start justify-center pl-8 md:pl-0">
             <p className="text-white/80 whitespace-nowrap font-medium">
               +1,000 Downloads
             </p>
@@ -62,7 +62,7 @@ export const Bento = () => {
             <a
               key={index}
               href={href}
-              className={`overflow-hidden md:col-span-${colSpan} md:row-span-${rowSpan} min-h-82.5 h-full md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:${hoverRotate} transition-all duration-200 ease-in-out relative bg-sidebar rounded-xl flex flex-col items-center justify-between px-3 py-6`}
+              className={`overflow-hidden md:col-span-${colSpan} md:row-span-${rowSpan} min-h-82.5 h-full w-full md:hover:scale-105 hover:shadow-[-6px_6px_32px_8px_rgba(192,192,192,0.2)] hover:${hoverRotate} transition-all duration-200 ease-in-out relative bg-sidebar rounded-xl flex flex-col items-center justify-between px-3 py-6`}
             >
               {/* 1. Full Cover Background Image */}
               {thumbnail && (
